@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      background: #111;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 15px;
+    }
+
+    .movie {
+      background: #222;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .movie:hover {
+      background: #333;
+    }
+
+    .movie-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .movie-id {
+      color: #999;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .message {
+      color: #aaa;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🎬 Movie Timeline</h1>
+  <div class="subtitle">Search for a movie</div>
+
+  <input
+    type="text"
+    id="search"
+    placeholder="Search movies..."
+    oninput="searchMovies()"
+  >
+
+  <div id="results"></div>
+
+  <script>
+    const movies = [
+      { id: "M001", title: "Jaws", year: 1975 },
+      { id: "M002", title: "The Matrix", year: 1999 },
+      { id: "M003", title: "Mean Girls", year: 2004 },
+      { id: "M004", title: "Jurassic Park", year: 1993 },
+      { id: "M005", title: "The Dark Knight", year: 2008 },
+      { id: "M006", title: "Toy Story", year: 1995 },
+      { id: "M007", title: "Get Out", year: 2017 },
+      { id: "M008", title: "The Shining", year: 1980 },
+      { id: "M009", title: "Back to the Future", year: 1985 },
+      { id: "M010", title: "Everything Everywhere All at Once", year: 2022 }
+    ];
+
+    function searchMovies() {
+      const search = document
+        .getElementById("search")
+        .value
+        .toLowerCase()
+        .trim();
+
+      const results = document.getElementById("results");
+
+      if (search === "") {
+        results.innerHTML =
+          '<div class="message">Start typing to search.</div>';
+        return;
+      }
+
+      const matches = movies.filter(movie =>
+        movie.title.toLowerCase().includes(search) ||
+        movie.id.toLowerCase().includes(search)
+      );
+
+      if (matches.length === 0) {
+        results.innerHTML =
+          '<div class="message">No movies found.</div>';
+        return;
+      }
+
+      results.innerHTML = matches.map(movie => `
+        <div class="movie" onclick="showMovie('${movie.id}')">
+          <div class="movie-title">${movie.title}</div>
+          <div class="movie-id">${movie.id}</div>
+        </div>
+      `).join("");
+    }
+
+    function showMovie(id) {
+      const movie = movies.find(movie => movie.id === id);
+
+      document.getElementById("results").innerHTML = `
+        <div class="movie">
+          <div class="movie-title">${movie.title}</div>
+          <div class="movie-id">${movie.id}</div>
+          <br>
+          <strong>Game Release Year:</strong>
+          ${movie.year}
+        </div>
+      `;
+    }
+
+    document.getElementById("results").innerHTML =
+      '<div class="message">Start typing to search.</div>';
+  </script>
+
+</body>
+</html>

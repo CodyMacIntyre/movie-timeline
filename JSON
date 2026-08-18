@@ -1,0 +1,300 @@
+{
+  "movies": [
+    {
+      "id": "M001",
+      "title": "Jaws",
+      "gameYear": 1975,
+      "gameDate": "June 20, 1975",
+      "releaseHistory": [
+        {
+          "date": "June 20, 1975",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Steven Spielberg",
+      "actors": [
+        "Roy Scheider",
+        "Robert Shaw",
+        "Richard Dreyfuss",
+        "Lorraine Gary",
+        "Murray Hamilton"
+      ],
+      "genre": [
+        "Thriller",
+        "Horror"
+      ],
+      "runtime": "124 minutes",
+      "boosts": []
+    },
+    {
+      "id": "M002",
+      "title": "The Matrix",
+      "gameYear": 1999,
+      "gameDate": "March 31, 1999",
+      "releaseHistory": [
+        {
+          "date": "March 24, 1999",
+          "type": "Los Angeles premiere"
+        },
+        {
+          "date": "March 31, 1999",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "The Wachowskis",
+      "actors": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Carrie-Anne Moss",
+        "Hugo Weaving",
+        "Gloria Foster",
+        "Joe Pantoliano"
+      ],
+      "genre": [
+        "Science fiction",
+        "Action"
+      ],
+      "runtime": "136 minutes",
+      "boosts": []
+    },
+    {
+      "id": "M003",
+      "title": "Mean Girls",
+      "gameYear": 2004,
+      "gameDate": "April 30, 2004",
+      "releaseHistory": [
+        {
+          "date": "April 30, 2004",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Mark Waters",
+      "actors": [
+        "Lindsay Lohan",
+        "Rachel McAdams",
+        "Tim Meadows",
+        "Ana Gasteyer",
+        "Amy Poehler",
+        "Tina Fey"
+      ],
+      "genre": [
+        "Teen comedy",
+        "Comedy"
+      ],
+      "runtime": "97 minutes",
+      "boosts": []
+    },
+    {
+      "id": "M004",
+      "title": "Jurassic Park",
+      "gameYear": 1993,
+      "gameDate": "June 11, 1993",
+      "releaseHistory": [
+        {
+          "date": "June 9, 1993",
+          "type": "Washington, D.C. premiere"
+        },
+        {
+          "date": "June 11, 1993",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Steven Spielberg",
+      "actors": [
+        "Sam Neill",
+        "Laura Dern",
+        "Jeff Goldblum",
+        "Richard Attenborough",
+        "Bob Peck",
+        "Martin Ferrero"
+      ],
+      "genre": [
+        "Science fiction",
+        "Adventure"
+      ],
+      "runtime": "127 minutes",
+      "boosts": []
+    },
+    {
+      "id": "M005",
+      "title": "The Dark Knight",
+      "gameYear": 2008,
+      "gameDate": "July 18, 2008",
+      "releaseHistory": [
+        {
+          "date": "July 14, 2008",
+          "type": "New York City premiere"
+        },
+        {
+          "date": "July 18, 2008",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Christopher Nolan",
+      "actors": [
+        "Christian Bale",
+        "Michael Caine",
+        "Heath Ledger",
+        "Gary Oldman",
+        "Aaron Eckhart",
+        "Maggie Gyllenhaal"
+      ],
+      "genre": [
+        "Superhero",
+        "Crime",
+        "Drama"
+      ],
+      "runtime": "152 minutes",
+      "boosts": []
+    },
+    {
+      "id": "M006",
+      "title": "Toy Story",
+      "gameYear": 1995,
+      "gameDate": "November 22, 1995",
+      "releaseHistory": [
+        {
+          "date": "November 19, 1995",
+          "type": "Hollywood premiere"
+        },
+        {
+          "date": "November 22, 1995",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "John Lasseter",
+      "actors": [
+        "Tom Hanks",
+        "Tim Allen",
+        "Don Rickles",
+        "Jim Varney",
+        "Wallace Shawn",
+        "John Ratzenberger"
+      ],
+      "genre": [
+        "Computer animation",
+        "Comedy"
+      ],
+      "runtime": "81 minutes",
+      "boosts": []
+    },
+    {
+      "id": "M007",
+      "title": "Get Out",
+      "gameYear": 2017,
+      "gameDate": "February 24, 2017",
+      "releaseHistory": [
+        {
+          "date": "January 23, 2017",
+          "type": "Sundance Film Festival premiere"
+        },
+        {
+          "date": "February 24, 2017",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Jordan Peele",
+      "actors": [
+        "Daniel Kaluuya",
+        "Allison Williams",
+        "Bradley Whitford",
+        "Catherine Keener",
+        "Caleb Landry Jones"
+      ],
+      "genre": [
+        "Horror",
+        "Satire"
+      ],
+      "runtime": "104 minutes",
+      "boosts": []
+    },
+    {
+      "id": "M008",
+      "title": "The Shining",
+      "gameYear": 1980,
+      "gameDate": "May 23, 1980",
+      "releaseHistory": [
+        {
+          "date": "May 23, 1980",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Stanley Kubrick",
+      "actors": [
+        "Jack Nicholson",
+        "Shelley Duvall",
+        "Danny Lloyd",
+        "Scatman Crothers",
+        "Barry Nelson"
+      ],
+      "genre": [
+        "Horror",
+        "Psychological horror"
+      ],
+      "runtime": "146 minutes",
+      "boosts": []
+    },
+    {
+      "id": "M009",
+      "title": "Back to the Future",
+      "gameYear": 1985,
+      "gameDate": "July 3, 1985",
+      "releaseHistory": [
+        {
+          "date": "July 3, 1985",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Robert Zemeckis",
+      "actors": [
+        "Michael J. Fox",
+        "Christopher Lloyd",
+        "Lea Thompson",
+        "Crispin Glover",
+        "Thomas F. Wilson"
+      ],
+      "genre": [
+        "Science fiction",
+        "Comedy",
+        "Adventure"
+      ],
+      "runtime": "116 minutes",
+      "boosts": []
+    },
+    {
+      "id": "M010",
+      "title": "Everything Everywhere All at Once",
+      "gameYear": 2022,
+      "gameDate": "March 25, 2022",
+      "releaseHistory": [
+        {
+          "date": "March 11, 2022",
+          "type": "SXSW Film Festival premiere"
+        },
+        {
+          "date": "March 23, 2022",
+          "type": "Limited theatrical release"
+        },
+        {
+          "date": "March 25, 2022",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Daniel Kwan and Daniel Scheinert",
+      "actors": [
+        "Michelle Yeoh",
+        "Ke Huy Quan",
+        "Stephanie Hsu",
+        "James Hong",
+        "Jamie Lee Curtis"
+      ],
+      "genre": [
+        "Science fiction",
+        "Comedy",
+        "Action"
+      ],
+      "runtime": "139 minutes",
+      "boosts": []
+    }
+  ]
+}

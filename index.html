@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie Timeline</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -63,38 +64,320 @@
       text-align: center;
       margin-top: 20px;
     }
+
+    .back-button {
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 7px;
+      cursor: pointer;
+      margin-bottom: 25px;
+    }
+
+    .back-button:hover {
+      background: #444;
+    }
+
+    .movie-page {
+      background: #222;
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .movie-page h2 {
+      font-size: 32px;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    .year-label {
+      color: #aaa;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+    }
+
+    .game-year {
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .section {
+      border-top: 1px solid #444;
+      padding-top: 20px;
+      margin-top: 20px;
+    }
+
+    .section h3 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .game-date {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .release-entry {
+      margin-bottom: 15px;
+    }
+
+    .release-date {
+      font-weight: bold;
+    }
+
+    .release-type {
+      color: #aaa;
+      font-size: 14px;
+      margin-top: 3px;
+    }
+
+    .future-section {
+      border-top: 1px solid #444;
+      padding-top: 20px;
+      margin-top: 25px;
+    }
+
+    .future-section h3 {
+      margin-top: 0;
+    }
+
+    .boost-placeholder {
+      color: #777;
+      font-style: italic;
+    }
   </style>
 </head>
 
 <body>
 
   <h1>🎬 Movie Timeline</h1>
-  <div class="subtitle">Search for a movie</div>
 
-  <input
-    type="text"
-    id="search"
-    placeholder="Search movies..."
-    oninput="searchMovies()"
-  >
-
-  <div id="results"></div>
+  <div id="app"></div>
 
   <script>
+
+    /*
+      ============================================================
+      MOVIE DATABASE
+      ============================================================
+
+      Each movie has a unique ID.
+
+      The "gameYear" is the year that matters for the game.
+
+      The "gameDate" is the specific release date that determines
+      that year.
+
+      "releaseHistory" contains additional release information
+      that players can use to understand why the game uses
+      that particular date/year.
+    */
+
     const movies = [
-      { id: "M001", title: "Jaws", year: 1975 },
-      { id: "M002", title: "The Matrix", year: 1999 },
-      { id: "M003", title: "Mean Girls", year: 2004 },
-      { id: "M004", title: "Jurassic Park", year: 1993 },
-      { id: "M005", title: "The Dark Knight", year: 2008 },
-      { id: "M006", title: "Toy Story", year: 1995 },
-      { id: "M007", title: "Get Out", year: 2017 },
-      { id: "M008", title: "The Shining", year: 1980 },
-      { id: "M009", title: "Back to the Future", year: 1985 },
-      { id: "M010", title: "Everything Everywhere All at Once", year: 2022 }
+
+      {
+        id: "M001",
+        title: "Jaws",
+        gameYear: 1975,
+        gameDate: "June 20, 1975",
+        releaseHistory: [
+          {
+            date: "June 20, 1975",
+            type: "United States theatrical release"
+          }
+        ]
+      },
+
+      {
+        id: "M002",
+        title: "The Matrix",
+        gameYear: 1999,
+        gameDate: "March 31, 1999",
+        releaseHistory: [
+          {
+            date: "March 24, 1999",
+            type: "Los Angeles premiere"
+          },
+          {
+            date: "March 31, 1999",
+            type: "United States theatrical release"
+          }
+        ]
+      },
+
+      {
+        id: "M003",
+        title: "Mean Girls",
+        gameYear: 2004,
+        gameDate: "April 30, 2004",
+        releaseHistory: [
+          {
+            date: "April 30, 2004",
+            type: "United States theatrical release"
+          }
+        ]
+      },
+
+      {
+        id: "M004",
+        title: "Jurassic Park",
+        gameYear: 1993,
+        gameDate: "June 11, 1993",
+        releaseHistory: [
+          {
+            date: "June 9, 1993",
+            type: "Washington, D.C. premiere"
+          },
+          {
+            date: "June 11, 1993",
+            type: "United States theatrical release"
+          }
+        ]
+      },
+
+      {
+        id: "M005",
+        title: "The Dark Knight",
+        gameYear: 2008,
+        gameDate: "July 18, 2008",
+        releaseHistory: [
+          {
+            date: "July 14, 2008",
+            type: "New York City premiere"
+          },
+          {
+            date: "July 18, 2008",
+            type: "United States theatrical release"
+          }
+        ]
+      },
+
+      {
+        id: "M006",
+        title: "Toy Story",
+        gameYear: 1995,
+        gameDate: "November 22, 1995",
+        releaseHistory: [
+          {
+            date: "November 19, 1995",
+            type: "Hollywood premiere"
+          },
+          {
+            date: "November 22, 1995",
+            type: "United States theatrical release"
+          }
+        ]
+      },
+
+      {
+        id: "M007",
+        title: "Get Out",
+        gameYear: 2017,
+        gameDate: "February 24, 2017",
+        releaseHistory: [
+          {
+            date: "January 23, 2017",
+            type: "Sundance Film Festival premiere"
+          },
+          {
+            date: "February 24, 2017",
+            type: "United States theatrical release"
+          }
+        ]
+      },
+
+      {
+        id: "M008",
+        title: "The Shining",
+        gameYear: 1980,
+        gameDate: "May 23, 1980",
+        releaseHistory: [
+          {
+            date: "May 23, 1980",
+            type: "United States theatrical release"
+          }
+        ]
+      },
+
+      {
+        id: "M009",
+        title: "Back to the Future",
+        gameYear: 1985,
+        gameDate: "July 3, 1985",
+        releaseHistory: [
+          {
+            date: "July 3, 1985",
+            type: "United States theatrical release"
+          }
+        ]
+      },
+
+      {
+        id: "M010",
+        title: "Everything Everywhere All at Once",
+        gameYear: 2022,
+        gameDate: "March 25, 2022",
+        releaseHistory: [
+          {
+            date: "March 11, 2022",
+            type: "SXSW Film Festival premiere"
+          },
+          {
+            date: "March 23, 2022",
+            type: "Limited theatrical release"
+          },
+          {
+            date: "March 25, 2022",
+            type: "United States theatrical release"
+          }
+        ]
+      }
+
     ];
 
+
+    /*
+      ============================================================
+      HOME / SEARCH PAGE
+      ============================================================
+    */
+
+    function showHome() {
+
+      document.getElementById("app").innerHTML = `
+
+        <div class="subtitle">
+          Search for a movie
+        </div>
+
+        <input
+          type="text"
+          id="search"
+          placeholder="Search movies..."
+          oninput="searchMovies()"
+        >
+
+        <div id="results"></div>
+
+      `;
+
+      document.getElementById("results").innerHTML =
+        '<div class="message">Start typing to search.</div>';
+    }
+
+
+    /*
+      ============================================================
+      SEARCH
+      ============================================================
+    */
+
     function searchMovies() {
+
       const search = document
         .getElementById("search")
         .value
@@ -104,8 +387,10 @@
       const results = document.getElementById("results");
 
       if (search === "") {
+
         results.innerHTML =
           '<div class="message">Start typing to search.</div>';
+
         return;
       }
 
@@ -115,35 +400,174 @@
       );
 
       if (matches.length === 0) {
+
         results.innerHTML =
           '<div class="message">No movies found.</div>';
+
         return;
       }
 
       results.innerHTML = matches.map(movie => `
-        <div class="movie" onclick="showMovie('${movie.id}')">
-          <div class="movie-title">${movie.title}</div>
-          <div class="movie-id">${movie.id}</div>
+
+        <div
+          class="movie"
+          onclick="showMovie('${movie.id}')"
+        >
+
+          <div class="movie-title">
+            ${movie.title}
+          </div>
+
+          <div class="movie-id">
+            ${movie.id}
+          </div>
+
         </div>
+
       `).join("");
     }
 
+
+    /*
+      ============================================================
+      MOVIE PAGE
+      ============================================================
+    */
+
     function showMovie(id) {
+
       const movie = movies.find(movie => movie.id === id);
 
-      document.getElementById("results").innerHTML = `
-        <div class="movie">
-          <div class="movie-title">${movie.title}</div>
-          <div class="movie-id">${movie.id}</div>
-          <br>
-          <strong>Game Release Year:</strong>
-          ${movie.year}
+      if (!movie) {
+        showHome();
+        return;
+      }
+
+      const releaseHistoryHTML = movie.releaseHistory.map(release => `
+
+        <div class="release-entry">
+
+          <div class="release-date">
+            ${release.date}
+          </div>
+
+          <div class="release-type">
+            ${release.type}
+          </div>
+
         </div>
+
+      `).join("");
+
+
+      document.getElementById("app").innerHTML = `
+
+        <div
+          class="back-button"
+          onclick="showHome()"
+        >
+          ← Back to Search
+        </div>
+
+        <div class="movie-page">
+
+          <div class="movie-id">
+            ${movie.id}
+          </div>
+
+          <h2>
+            ${movie.title}
+          </h2>
+
+          <div class="year-label">
+            Game Release Year
+          </div>
+
+          <div class="game-year">
+            ${movie.gameYear}
+          </div>
+
+
+          <div class="section">
+
+            <h3>
+              Release Information
+            </h3>
+
+            <div class="game-date">
+
+              <strong>
+                Game Release Date:
+              </strong>
+
+              ${movie.gameDate}
+
+            </div>
+
+            <div class="release-type">
+
+              This is the release date used to determine
+              the movie's year in Movie Timeline.
+
+            </div>
+
+          </div>
+
+
+          <div class="section">
+
+            <h3>
+              Release History
+            </h3>
+
+            ${releaseHistoryHTML}
+
+          </div>
+
+
+          <!--
+            FUTURE FEATURE:
+
+            This section will eventually automatically display
+            applicable "boost" cards.
+
+            Example:
+
+            🎞️ 1990s Bonus
+            🎬 James Cameron Bonus
+            ⭐ Leonardo DiCaprio Bonus
+
+            We are deliberately leaving this empty for now.
+          -->
+
+          <div class="future-section">
+
+            <h3>
+              Movie Boosts
+            </h3>
+
+            <div class="boost-placeholder">
+
+              No boosts are currently active.
+
+            </div>
+
+          </div>
+
+        </div>
+
       `;
     }
 
-    document.getElementById("results").innerHTML =
-      '<div class="message">Start typing to search.</div>';
+
+    /*
+      ============================================================
+      START THE WEBSITE
+      ============================================================
+    */
+
+    showHome();
+
   </script>
 
 </body>

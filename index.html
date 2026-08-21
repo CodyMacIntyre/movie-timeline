@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <title>Movie Timeline</title>
 
   <style>
+
     body {
       font-family: Arial, sans-serif;
       max-width: 700px;
@@ -87,7 +95,7 @@
 
     .movie-page h2 {
       font-size: 32px;
-      margin-top: 0;
+      margin-top: 5px;
       margin-bottom: 25px;
     }
 
@@ -100,9 +108,9 @@
     }
 
     .game-year {
-      font-size: 56px;
+      font-size: 64px;
       font-weight: bold;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
     .section {
@@ -135,214 +143,142 @@
       margin-top: 3px;
     }
 
-    .future-section {
-      border-top: 1px solid #444;
-      padding-top: 20px;
-      margin-top: 25px;
+    .detail-row {
+      margin-bottom: 16px;
     }
 
-    .future-section h3 {
+    .detail-label {
+      color: #aaa;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .detail-value {
+      font-size: 17px;
+    }
+
+    .actor-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .actor-list li {
+      margin-bottom: 5px;
+    }
+
+    .genre-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .genre {
+      background: #333;
+      border-radius: 20px;
+      padding: 6px 10px;
+      font-size: 13px;
+    }
+
+    .boost-section {
+      border: 1px solid #555;
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    .boost-section h3 {
       margin-top: 0;
+      margin-bottom: 12px;
     }
 
-    .boost-placeholder {
+    .boost {
+      background: #333;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 8px;
+    }
+
+    .no-boosts {
       color: #777;
       font-style: italic;
+      font-size: 14px;
     }
+
   </style>
+
 </head>
+
 
 <body>
 
   <h1>🎬 Movie Timeline</h1>
 
-  <div id="app"></div>
+  <div id="app">
+
+    <div class="message">
+      Loading movie database...
+    </div>
+
+  </div>
+
 
   <script>
 
+    let movies = [];
+
+
     /*
       ============================================================
-      MOVIE DATABASE
+      LOAD MOVIE DATABASE
       ============================================================
-
-      Each movie has a unique ID.
-
-      The "gameYear" is the year that matters for the game.
-
-      The "gameDate" is the specific release date that determines
-      that year.
-
-      "releaseHistory" contains additional release information
-      that players can use to understand why the game uses
-      that particular date/year.
     */
 
-    const movies = [
+    fetch("movies.json")
 
-      {
-        id: "M001",
-        title: "Jaws",
-        gameYear: 1975,
-        gameDate: "June 20, 1975",
-        releaseHistory: [
-          {
-            date: "June 20, 1975",
-            type: "United States theatrical release"
-          }
-        ]
-      },
+      .then(response => {
 
-      {
-        id: "M002",
-        title: "The Matrix",
-        gameYear: 1999,
-        gameDate: "March 31, 1999",
-        releaseHistory: [
-          {
-            date: "March 24, 1999",
-            type: "Los Angeles premiere"
-          },
-          {
-            date: "March 31, 1999",
-            type: "United States theatrical release"
-          }
-        ]
-      },
+        if (!response.ok) {
+          throw new Error("Could not load movie database.");
+        }
 
-      {
-        id: "M003",
-        title: "Mean Girls",
-        gameYear: 2004,
-        gameDate: "April 30, 2004",
-        releaseHistory: [
-          {
-            date: "April 30, 2004",
-            type: "United States theatrical release"
-          }
-        ]
-      },
+        return response.json();
 
-      {
-        id: "M004",
-        title: "Jurassic Park",
-        gameYear: 1993,
-        gameDate: "June 11, 1993",
-        releaseHistory: [
-          {
-            date: "June 9, 1993",
-            type: "Washington, D.C. premiere"
-          },
-          {
-            date: "June 11, 1993",
-            type: "United States theatrical release"
-          }
-        ]
-      },
+      })
 
-      {
-        id: "M005",
-        title: "The Dark Knight",
-        gameYear: 2008,
-        gameDate: "July 18, 2008",
-        releaseHistory: [
-          {
-            date: "July 14, 2008",
-            type: "New York City premiere"
-          },
-          {
-            date: "July 18, 2008",
-            type: "United States theatrical release"
-          }
-        ]
-      },
+      .then(data => {
 
-      {
-        id: "M006",
-        title: "Toy Story",
-        gameYear: 1995,
-        gameDate: "November 22, 1995",
-        releaseHistory: [
-          {
-            date: "November 19, 1995",
-            type: "Hollywood premiere"
-          },
-          {
-            date: "November 22, 1995",
-            type: "United States theatrical release"
-          }
-        ]
-      },
+        movies = data.movies;
 
-      {
-        id: "M007",
-        title: "Get Out",
-        gameYear: 2017,
-        gameDate: "February 24, 2017",
-        releaseHistory: [
-          {
-            date: "January 23, 2017",
-            type: "Sundance Film Festival premiere"
-          },
-          {
-            date: "February 24, 2017",
-            type: "United States theatrical release"
-          }
-        ]
-      },
+        showHome();
 
-      {
-        id: "M008",
-        title: "The Shining",
-        gameYear: 1980,
-        gameDate: "May 23, 1980",
-        releaseHistory: [
-          {
-            date: "May 23, 1980",
-            type: "United States theatrical release"
-          }
-        ]
-      },
+      })
 
-      {
-        id: "M009",
-        title: "Back to the Future",
-        gameYear: 1985,
-        gameDate: "July 3, 1985",
-        releaseHistory: [
-          {
-            date: "July 3, 1985",
-            type: "United States theatrical release"
-          }
-        ]
-      },
+      .catch(error => {
 
-      {
-        id: "M010",
-        title: "Everything Everywhere All at Once",
-        gameYear: 2022,
-        gameDate: "March 25, 2022",
-        releaseHistory: [
-          {
-            date: "March 11, 2022",
-            type: "SXSW Film Festival premiere"
-          },
-          {
-            date: "March 23, 2022",
-            type: "Limited theatrical release"
-          },
-          {
-            date: "March 25, 2022",
-            type: "United States theatrical release"
-          }
-        ]
-      }
+        document.getElementById("app").innerHTML = `
 
-    ];
+          <div class="message">
+
+            Unable to load the movie database.
+
+            <br><br>
+
+            Please try refreshing the page.
+
+          </div>
+
+        `;
+
+        console.error(error);
+
+      });
 
 
     /*
       ============================================================
-      HOME / SEARCH PAGE
+      HOME / SEARCH
       ============================================================
     */
 
@@ -359,6 +295,7 @@
           id="search"
           placeholder="Search movies..."
           oninput="searchMovies()"
+          autocomplete="off"
         >
 
         <div id="results"></div>
@@ -367,6 +304,7 @@
 
       document.getElementById("results").innerHTML =
         '<div class="message">Start typing to search.</div>';
+
     }
 
 
@@ -384,7 +322,9 @@
         .toLowerCase()
         .trim();
 
-      const results = document.getElementById("results");
+      const results =
+        document.getElementById("results");
+
 
       if (search === "") {
 
@@ -392,12 +332,24 @@
           '<div class="message">Start typing to search.</div>';
 
         return;
+
       }
 
+
       const matches = movies.filter(movie =>
-        movie.title.toLowerCase().includes(search) ||
-        movie.id.toLowerCase().includes(search)
+
+        movie.title
+          .toLowerCase()
+          .includes(search)
+
+        ||
+
+        movie.id
+          .toLowerCase()
+          .includes(search)
+
       );
+
 
       if (matches.length === 0) {
 
@@ -405,7 +357,9 @@
           '<div class="message">No movies found.</div>';
 
         return;
+
       }
+
 
       results.innerHTML = matches.map(movie => `
 
@@ -425,6 +379,7 @@
         </div>
 
       `).join("");
+
     }
 
 
@@ -436,29 +391,109 @@
 
     function showMovie(id) {
 
-      const movie = movies.find(movie => movie.id === id);
+      const movie =
+        movies.find(movie => movie.id === id);
+
 
       if (!movie) {
+
         showHome();
+
         return;
+
       }
 
-      const releaseHistoryHTML = movie.releaseHistory.map(release => `
 
-        <div class="release-entry">
+      /*
+        RELEASE HISTORY
+      */
 
-          <div class="release-date">
-            ${release.date}
+      const releaseHistoryHTML =
+        movie.releaseHistory.map(release => `
+
+          <div class="release-entry">
+
+            <div class="release-date">
+              ${release.date}
+            </div>
+
+            <div class="release-type">
+              ${release.type}
+            </div>
+
           </div>
 
-          <div class="release-type">
-            ${release.type}
+        `).join("");
+
+
+      /*
+        ACTORS
+      */
+
+      const actorHTML =
+        movie.actors.map(actor => `
+
+          <li>
+            ${actor}
+          </li>
+
+        `).join("");
+
+
+      /*
+        GENRES
+      */
+
+      const genreHTML =
+        movie.genre.map(genre => `
+
+          <span class="genre">
+            ${genre}
+          </span>
+
+        `).join("");
+
+
+      /*
+        BOOSTS
+
+        This is already connected to the JSON.
+
+        Once we create actual boost cards, we simply put
+        them into the movie's "boosts" array.
+      */
+
+      let boostsHTML = "";
+
+
+      if (movie.boosts && movie.boosts.length > 0) {
+
+        boostsHTML = `
+
+          <div class="boost-section">
+
+            <h3>
+              🎞️ Active Boosts
+            </h3>
+
+            ${movie.boosts.map(boost => `
+
+              <div class="boost">
+                ${boost}
+              </div>
+
+            `).join("")}
+
           </div>
 
-        </div>
+        `;
 
-      `).join("");
+      }
 
+
+      /*
+        MOVIE PAGE
+      */
 
       document.getElementById("app").innerHTML = `
 
@@ -469,15 +504,21 @@
           ← Back to Search
         </div>
 
+
         <div class="movie-page">
+
 
           <div class="movie-id">
             ${movie.id}
           </div>
 
+
           <h2>
             ${movie.title}
           </h2>
+
+
+          <!-- GAME ANSWER -->
 
           <div class="year-label">
             Game Release Year
@@ -487,6 +528,13 @@
             ${movie.gameYear}
           </div>
 
+
+          <!-- ACTIVE BOOSTS -->
+
+          ${boostsHTML}
+
+
+          <!-- RELEASE INFORMATION -->
 
           <div class="section">
 
@@ -514,6 +562,8 @@
           </div>
 
 
+          <!-- RELEASE HISTORY -->
+
           <div class="section">
 
             <h3>
@@ -525,50 +575,86 @@
           </div>
 
 
-          <!--
-            FUTURE FEATURE:
+          <!-- MOVIE DETAILS -->
 
-            This section will eventually automatically display
-            applicable "boost" cards.
-
-            Example:
-
-            🎞️ 1990s Bonus
-            🎬 James Cameron Bonus
-            ⭐ Leonardo DiCaprio Bonus
-
-            We are deliberately leaving this empty for now.
-          -->
-
-          <div class="future-section">
+          <div class="section">
 
             <h3>
-              Movie Boosts
+              Movie Details
             </h3>
 
-            <div class="boost-placeholder">
 
-              No boosts are currently active.
+            <div class="detail-row">
+
+              <div class="detail-label">
+                Director
+              </div>
+
+              <div class="detail-value">
+                ${movie.director}
+              </div>
 
             </div>
 
+
+            <div class="detail-row">
+
+              <div class="detail-label">
+                Actors
+              </div>
+
+              <div class="detail-value">
+
+                <ul class="actor-list">
+
+                  ${actorHTML}
+
+                </ul>
+
+              </div>
+
+            </div>
+
+
+            <div class="detail-row">
+
+              <div class="detail-label">
+                Genre
+              </div>
+
+              <div class="genre-list">
+
+                ${genreHTML}
+
+              </div>
+
+            </div>
+
+
+            <div class="detail-row">
+
+              <div class="detail-label">
+                Runtime
+              </div>
+
+              <div class="detail-value">
+                ${movie.runtime}
+              </div>
+
+            </div>
+
+
           </div>
+
 
         </div>
 
       `;
+
     }
-
-
-    /*
-      ============================================================
-      START THE WEBSITE
-      ============================================================
-    */
-
-    showHome();
 
   </script>
 
 </body>
+
 </html>

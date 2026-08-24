@@ -12,27 +12,31 @@
 
   <title>Movie Timeline</title>
 
+
   <style>
 
     body {
       font-family: Arial, sans-serif;
-      max-width: 700px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 30px 20px;
       background: #111;
       color: #fff;
     }
 
+
     h1 {
       text-align: center;
       margin-bottom: 10px;
     }
+
 
     .subtitle {
       text-align: center;
       color: #aaa;
       margin-bottom: 30px;
     }
+
 
     input {
       width: 100%;
@@ -44,6 +48,7 @@
       margin-bottom: 15px;
     }
 
+
     .movie {
       background: #222;
       border-radius: 10px;
@@ -52,14 +57,17 @@
       cursor: pointer;
     }
 
+
     .movie:hover {
       background: #333;
     }
+
 
     .movie-title {
       font-size: 20px;
       font-weight: bold;
     }
+
 
     .movie-id {
       color: #999;
@@ -67,11 +75,13 @@
       margin-top: 5px;
     }
 
+
     .message {
       color: #aaa;
       text-align: center;
       margin-top: 20px;
     }
+
 
     .back-button {
       display: inline-block;
@@ -83,9 +93,18 @@
       margin-bottom: 25px;
     }
 
+
     .back-button:hover {
       background: #444;
     }
+
+
+    /*
+      ============================================================
+      SINGLE MOVIE / VERSION
+      ============================================================
+    */
+
 
     .movie-page {
       background: #222;
@@ -93,11 +112,13 @@
       padding: 25px;
     }
 
+
     .movie-page h2 {
       font-size: 32px;
       margin-top: 5px;
       margin-bottom: 25px;
     }
+
 
     .year-label {
       color: #aaa;
@@ -107,11 +128,63 @@
       margin-bottom: 5px;
     }
 
+
     .game-year {
       font-size: 64px;
       font-weight: bold;
       margin-bottom: 20px;
     }
+
+
+    /*
+      ============================================================
+      MULTIPLE VERSIONS
+      ============================================================
+    */
+
+
+    .version-grid {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+      );
+
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+
+    .version-card {
+      background: #1a1a1a;
+      border: 1px solid #444;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+
+    .version-year {
+      font-size: 42px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+
+    .version-label {
+      color: #aaa;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+    }
+
+
+    /*
+      ============================================================
+      SECTIONS
+      ============================================================
+    */
+
 
     .section {
       border-top: 1px solid #444;
@@ -119,23 +192,28 @@
       margin-top: 20px;
     }
 
+
     .section h3 {
       margin-top: 0;
       font-size: 20px;
     }
+
 
     .game-date {
       font-size: 18px;
       margin-bottom: 10px;
     }
 
+
     .release-entry {
       margin-bottom: 15px;
     }
 
+
     .release-date {
       font-weight: bold;
     }
+
 
     .release-type {
       color: #aaa;
@@ -143,9 +221,11 @@
       margin-top: 3px;
     }
 
+
     .detail-row {
       margin-bottom: 16px;
     }
+
 
     .detail-label {
       color: #aaa;
@@ -155,24 +235,29 @@
       margin-bottom: 4px;
     }
 
+
     .detail-value {
       font-size: 17px;
     }
+
 
     .actor-list {
       margin: 0;
       padding-left: 20px;
     }
 
+
     .actor-list li {
       margin-bottom: 5px;
     }
+
 
     .genre-list {
       display: flex;
       flex-wrap: wrap;
       gap: 7px;
     }
+
 
     .genre {
       background: #333;
@@ -181,6 +266,14 @@
       font-size: 13px;
     }
 
+
+    /*
+      ============================================================
+      BOOSTS
+      ============================================================
+    */
+
+
     .boost-section {
       border: 1px solid #555;
       border-radius: 10px;
@@ -188,10 +281,12 @@
       margin-top: 20px;
     }
 
+
     .boost-section h3 {
       margin-top: 0;
       margin-bottom: 12px;
     }
+
 
     .boost {
       background: #333;
@@ -200,10 +295,40 @@
       margin-bottom: 8px;
     }
 
-    .no-boosts {
-      color: #777;
-      font-style: italic;
-      font-size: 14px;
+
+    /*
+      ============================================================
+      MOBILE
+      ============================================================
+    */
+
+
+    @media (max-width: 600px) {
+
+      body {
+        padding: 20px 12px;
+      }
+
+
+      .movie-page {
+        padding: 18px;
+      }
+
+
+      .movie-page h2 {
+        font-size: 27px;
+      }
+
+
+      .game-year {
+        font-size: 52px;
+      }
+
+
+      .version-grid {
+        grid-template-columns: 1fr;
+      }
+
     }
 
   </style>
@@ -213,7 +338,9 @@
 
 <body>
 
+
   <h1>🎬 Movie Timeline</h1>
+
 
   <div id="app">
 
@@ -226,6 +353,7 @@
 
   <script>
 
+
     let movies = [];
 
 
@@ -235,17 +363,23 @@
       ============================================================
     */
 
+
     fetch("movies.json")
 
       .then(response => {
 
         if (!response.ok) {
-          throw new Error("Could not load movie database.");
+
+          throw new Error(
+            "Could not load movie database."
+          );
+
         }
 
         return response.json();
 
       })
+
 
       .then(data => {
 
@@ -254,6 +388,7 @@
         showHome();
 
       })
+
 
       .catch(error => {
 
@@ -278,9 +413,47 @@
 
     /*
       ============================================================
+      GROUP MOVIES BY TITLE
+      ============================================================
+    */
+
+
+    function groupMoviesByTitle() {
+
+      const groups = {};
+
+
+      movies.forEach(movie => {
+
+        const key =
+          movie.title
+            .trim()
+            .toLowerCase();
+
+
+        if (!groups[key]) {
+
+          groups[key] = [];
+
+        }
+
+
+        groups[key].push(movie);
+
+      });
+
+
+      return groups;
+
+    }
+
+
+    /*
+      ============================================================
       HOME / SEARCH
       ============================================================
     */
+
 
     function showHome() {
 
@@ -290,6 +463,7 @@
           Search for a movie
         </div>
 
+
         <input
           type="text"
           id="search"
@@ -298,11 +472,14 @@
           autocomplete="off"
         >
 
+
         <div id="results"></div>
 
       `;
 
+
       document.getElementById("results").innerHTML =
+
         '<div class="message">Start typing to search.</div>';
 
     }
@@ -314,13 +491,17 @@
       ============================================================
     */
 
+
     function searchMovies() {
 
-      const search = document
-        .getElementById("search")
-        .value
-        .toLowerCase()
-        .trim();
+      const search =
+
+        document
+          .getElementById("search")
+          .value
+          .toLowerCase()
+          .trim();
+
 
       const results =
         document.getElementById("results");
@@ -329,6 +510,7 @@
       if (search === "") {
 
         results.innerHTML =
+
           '<div class="message">Start typing to search.</div>';
 
         return;
@@ -336,24 +518,23 @@
       }
 
 
-      const matches = movies.filter(movie =>
-
-        movie.title
-          .toLowerCase()
-          .includes(search)
-
-        ||
-
-        movie.id
-          .toLowerCase()
-          .includes(search)
-
-      );
+      const groups =
+        groupMoviesByTitle();
 
 
-      if (matches.length === 0) {
+      const matchingTitles =
+
+        Object.keys(groups).filter(title =>
+
+          title.includes(search)
+
+        );
+
+
+      if (matchingTitles.length === 0) {
 
         results.innerHTML =
+
           '<div class="message">No movies found.</div>';
 
         return;
@@ -361,41 +542,69 @@
       }
 
 
-      results.innerHTML = matches.map(movie => `
+      results.innerHTML =
 
-        <div
-          class="movie"
-          onclick="showMovie('${movie.id}')"
-        >
+        matchingTitles.map(title => {
 
-          <div class="movie-title">
-            ${movie.title}
-          </div>
+          const versions =
+            groups[title];
 
-          <div class="movie-id">
-            ${movie.id}
-          </div>
 
-        </div>
+          return `
 
-      `).join("");
+            <div
+              class="movie"
+              onclick="showMovieGroup('${encodeURIComponent(title)}')"
+            >
+
+              <div class="movie-title">
+
+                ${versions[0].title}
+
+              </div>
+
+
+              <div class="movie-id">
+
+                ${versions.length === 1
+
+                  ? "1 movie"
+
+                  : versions.length + " versions"}
+
+              </div>
+
+            </div>
+
+          `;
+
+        }).join("");
 
     }
 
 
     /*
       ============================================================
-      MOVIE PAGE
+      SHOW TITLE GROUP
       ============================================================
     */
 
-    function showMovie(id) {
 
-      const movie =
-        movies.find(movie => movie.id === id);
+    function showMovieGroup(encodedTitle) {
+
+      const title =
+        decodeURIComponent(encodedTitle);
 
 
-      if (!movie) {
+      const groups =
+        groupMoviesByTitle();
+
+
+      const versions =
+        groups[title];
+
+
+      if (!versions) {
 
         showHome();
 
@@ -405,20 +614,136 @@
 
 
       /*
-        RELEASE HISTORY
+        SINGLE VERSION
       */
 
+
+      if (versions.length === 1) {
+
+        showSingleMovie(versions[0]);
+
+        return;
+
+      }
+
+
+      /*
+        MULTIPLE VERSIONS
+      */
+
+
+      const versionHTML =
+
+        versions.map(movie =>
+
+          buildVersionCard(movie)
+
+        ).join("");
+
+
+      document.getElementById("app").innerHTML = `
+
+        <div
+          class="back-button"
+          onclick="showHome()"
+        >
+
+          ← Back to Search
+
+        </div>
+
+
+        <div class="movie-page">
+
+
+          <div class="movie-id">
+
+            ${versions.length} versions found
+
+          </div>
+
+
+          <h2>
+
+            ${versions[0].title}
+
+          </h2>
+
+
+          <div class="section">
+
+            <h3>
+
+              Release Versions
+
+            </h3>
+
+
+            <div class="version-grid">
+
+              ${versionHTML}
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      `;
+
+    }
+
+
+    /*
+      ============================================================
+      BUILD VERSION CARD
+      ============================================================
+    */
+
+
+    function buildVersionCard(movie) {
+
+
+      const actorHTML =
+
+        movie.actors.map(actor => `
+
+          <li>${actor}</li>
+
+        `).join("");
+
+
+      const genreHTML =
+
+        movie.genre.map(genre => `
+
+          <span class="genre">
+
+            ${genre}
+
+          </span>
+
+        `).join("");
+
+
       const releaseHistoryHTML =
+
         movie.releaseHistory.map(release => `
 
           <div class="release-entry">
 
             <div class="release-date">
+
               ${release.date}
+
             </div>
 
+
             <div class="release-type">
+
               ${release.type}
+
             </div>
 
           </div>
@@ -426,60 +751,243 @@
         `).join("");
 
 
-      /*
-        ACTORS
-      */
+      return `
+
+        <div class="version-card">
+
+
+          <div class="version-label">
+
+            Game Release Year
+
+          </div>
+
+
+          <div class="version-year">
+
+            ${movie.gameYear}
+
+          </div>
+
+
+          <div class="detail-row">
+
+            <div class="detail-label">
+
+              Director
+
+            </div>
+
+
+            <div class="detail-value">
+
+              ${movie.director}
+
+            </div>
+
+          </div>
+
+
+          <div class="detail-row">
+
+            <div class="detail-label">
+
+              Actors
+
+            </div>
+
+
+            <div class="detail-value">
+
+              <ul class="actor-list">
+
+                ${actorHTML}
+
+              </ul>
+
+            </div>
+
+          </div>
+
+
+          <div class="detail-row">
+
+            <div class="detail-label">
+
+              Genre
+
+            </div>
+
+
+            <div class="genre-list">
+
+              ${genreHTML}
+
+            </div>
+
+          </div>
+
+
+          <div class="detail-row">
+
+            <div class="detail-label">
+
+              Runtime
+
+            </div>
+
+
+            <div class="detail-value">
+
+              ${movie.runtime}
+
+            </div>
+
+          </div>
+
+
+          <div class="section">
+
+
+            <h3>
+
+              Release Information
+
+            </h3>
+
+
+            <div class="game-date">
+
+              <strong>
+
+                Game Release Date:
+
+              </strong>
+
+              ${movie.gameDate}
+
+            </div>
+
+
+            <div class="release-type">
+
+              This is the release date used to determine
+
+              the movie's year in Movie Timeline.
+
+            </div>
+
+
+          </div>
+
+
+          <div class="section">
+
+
+            <h3>
+
+              Release History
+
+            </h3>
+
+
+            ${releaseHistoryHTML}
+
+
+          </div>
+
+
+        </div>
+
+      `;
+
+    }
+
+
+    /*
+      ============================================================
+      SINGLE MOVIE
+      ============================================================
+    */
+
+
+    function showSingleMovie(movie) {
+
 
       const actorHTML =
+
         movie.actors.map(actor => `
 
-          <li>
-            ${actor}
-          </li>
+          <li>${actor}</li>
 
         `).join("");
 
 
-      /*
-        GENRES
-      */
-
       const genreHTML =
+
         movie.genre.map(genre => `
 
           <span class="genre">
+
             ${genre}
+
           </span>
 
         `).join("");
 
 
-      /*
-        BOOSTS
+      const releaseHistoryHTML =
 
-        This is already connected to the JSON.
+        movie.releaseHistory.map(release => `
 
-        Once we create actual boost cards, we simply put
-        them into the movie's "boosts" array.
-      */
+          <div class="release-entry">
+
+            <div class="release-date">
+
+              ${release.date}
+
+            </div>
+
+
+            <div class="release-type">
+
+              ${release.type}
+
+            </div>
+
+          </div>
+
+        `).join("");
+
 
       let boostsHTML = "";
 
 
-      if (movie.boosts && movie.boosts.length > 0) {
+      if (
+
+        movie.boosts &&
+
+        movie.boosts.length > 0
+
+      ) {
 
         boostsHTML = `
 
           <div class="boost-section">
 
             <h3>
+
               🎞️ Active Boosts
+
             </h3>
+
 
             ${movie.boosts.map(boost => `
 
               <div class="boost">
+
                 ${boost}
+
               </div>
 
             `).join("")}
@@ -491,17 +999,15 @@
       }
 
 
-      /*
-        MOVIE PAGE
-      */
-
       document.getElementById("app").innerHTML = `
 
         <div
           class="back-button"
           onclick="showHome()"
         >
+
           ← Back to Search
+
         </div>
 
 
@@ -509,89 +1015,110 @@
 
 
           <div class="movie-id">
+
             ${movie.id}
+
           </div>
 
 
           <h2>
+
             ${movie.title}
+
           </h2>
 
 
-          <!-- GAME ANSWER -->
-
           <div class="year-label">
+
             Game Release Year
+
           </div>
+
 
           <div class="game-year">
+
             ${movie.gameYear}
+
           </div>
 
-
-          <!-- ACTIVE BOOSTS -->
 
           ${boostsHTML}
 
 
-          <!-- RELEASE INFORMATION -->
-
           <div class="section">
 
+
             <h3>
+
               Release Information
+
             </h3>
+
 
             <div class="game-date">
 
               <strong>
+
                 Game Release Date:
+
               </strong>
 
               ${movie.gameDate}
 
             </div>
 
+
             <div class="release-type">
 
               This is the release date used to determine
+
               the movie's year in Movie Timeline.
 
             </div>
 
+
           </div>
 
 
-          <!-- RELEASE HISTORY -->
-
           <div class="section">
 
+
             <h3>
+
               Release History
+
             </h3>
+
 
             ${releaseHistoryHTML}
 
+
           </div>
 
 
-          <!-- MOVIE DETAILS -->
-
           <div class="section">
 
+
             <h3>
+
               Movie Details
+
             </h3>
 
 
             <div class="detail-row">
 
               <div class="detail-label">
+
                 Director
+
               </div>
 
+
               <div class="detail-value">
+
                 ${movie.director}
+
               </div>
 
             </div>
@@ -600,8 +1127,11 @@
             <div class="detail-row">
 
               <div class="detail-label">
+
                 Actors
+
               </div>
+
 
               <div class="detail-value">
 
@@ -619,8 +1149,11 @@
             <div class="detail-row">
 
               <div class="detail-label">
+
                 Genre
+
               </div>
+
 
               <div class="genre-list">
 
@@ -634,11 +1167,16 @@
             <div class="detail-row">
 
               <div class="detail-label">
+
                 Runtime
+
               </div>
 
+
               <div class="detail-value">
+
                 ${movie.runtime}
+
               </div>
 
             </div>
@@ -652,6 +1190,7 @@
       `;
 
     }
+
 
   </script>
 

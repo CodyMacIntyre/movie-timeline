@@ -156,14 +156,6 @@
     }
 
 
-    .multiple-title-explanation {
-      color: #aaa;
-      font-size: 14px;
-      margin-top: 5px;
-      line-height: 1.4;
-    }
-
-
     /* ============================================================
        MULTIPLE VERSIONS
        ============================================================ */
@@ -408,7 +400,7 @@
 
         movies = data.movies;
 
-        showHome();
+        initializePage();
 
       })
 
@@ -432,6 +424,36 @@
         console.error(error);
 
       });
+
+
+    /* ============================================================
+       INITIALIZE PAGE
+       ============================================================ */
+
+
+    function initializePage() {
+
+      const params =
+        new URLSearchParams(
+          window.location.search
+        );
+
+
+      const requestedMovie =
+        params.get("movie");
+
+
+      if (requestedMovie) {
+
+        openMovieFromURL(requestedMovie);
+
+      } else {
+
+        showHome();
+
+      }
+
+    }
 
 
     /* ============================================================
@@ -470,11 +492,58 @@
 
 
     /* ============================================================
+       FIND MOVIE GROUP FROM URL
+       ============================================================ */
+
+
+    function openMovieFromURL(requestedMovie) {
+
+      const groups =
+        groupMoviesByTitle();
+
+
+      const searchTitle =
+        requestedMovie
+          .trim()
+          .toLowerCase();
+
+
+      const versions =
+        groups[searchTitle];
+
+
+      if (!versions) {
+
+        showHomeWithMessage(
+          "Movie not found."
+        );
+
+        return;
+
+      }
+
+
+      showMovieGroupByTitle(
+        searchTitle,
+        false
+      );
+
+    }
+
+
+    /* ============================================================
        HOME / SEARCH
        ============================================================ */
 
 
     function showHome() {
+
+      window.history.pushState(
+        {},
+        "",
+        window.location.pathname
+      );
+
 
       document.getElementById("app").innerHTML = `
 
@@ -500,6 +569,47 @@
       document.getElementById("results").innerHTML =
 
         '<div class="message">Start typing to search.</div>';
+
+    }
+
+
+    /* ============================================================
+       HOME WITH MESSAGE
+       ============================================================ */
+
+
+    function showHomeWithMessage(message) {
+
+      window.history.pushState(
+        {},
+        "",
+        window.location.pathname
+      );
+
+
+      document.getElementById("app").innerHTML = `
+
+        <div class="subtitle">
+          Search for a movie
+        </div>
+
+
+        <input
+          type="text"
+          id="search"
+          placeholder="Search movies..."
+          oninput="searchMovies()"
+          autocomplete="off"
+        >
+
+
+        <div class="message">
+
+          ${message}
+
+        </div>
+
+      `;
 
     }
 
@@ -571,7 +681,7 @@
 
             <div
               class="movie"
-              onclick="showMovieGroup('${encodeURIComponent(title)}')"
+              onclick="showMovieGroupByTitle('${encodeURIComponent(title)}')"
             >
 
               <div class="movie-title">
@@ -601,14 +711,31 @@
 
 
     /* ============================================================
-       SHOW TITLE GROUP
+       SHOW MOVIE GROUP
        ============================================================ */
 
 
-    function showMovieGroup(encodedTitle) {
+    function showMovieGroupByTitle(
+      encodedOrTitle,
+      updateURL = true
+    ) {
 
-      const title =
-        decodeURIComponent(encodedTitle);
+      let title;
+
+
+      try {
+
+        title =
+          decodeURIComponent(
+            encodedOrTitle
+          );
+
+      } catch {
+
+        title =
+          encodedOrTitle;
+
+      }
 
 
       const groups =
@@ -621,14 +748,41 @@
 
       if (!versions) {
 
-        showHome();
+        showHomeWithMessage(
+          "Movie not found."
+        );
 
         return;
 
       }
 
 
-      /* SINGLE VERSION */
+      /*
+        Update browser URL when
+        arriving through search.
+      */
+
+
+      if (updateURL) {
+
+        const urlTitle =
+          encodeURIComponent(
+            versions[0].title
+          );
+
+
+        window.history.pushState(
+          {},
+          "",
+          `?movie=${urlTitle}`
+        );
+
+      }
+
+
+      /*
+        SINGLE VERSION
+      */
 
 
       if (versions.length === 1) {
@@ -640,7 +794,9 @@
       }
 
 
-      /* MULTIPLE VERSIONS */
+      /*
+        MULTIPLE VERSIONS
+      */
 
 
       const versionHTML =
@@ -1183,6 +1339,17 @@
       `;
 
     }
+
+
+    /* ============================================================
+       BROWSER BACK BUTTON
+       ============================================================ */
+
+
+    window.addEventListener(
+      "popstate",
+      initializePage
+    );
 
 
   </script>

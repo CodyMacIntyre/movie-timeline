@@ -295,6 +295,104 @@
       ],
       "runtime": "139 minutes",
       "boosts": []
+         ),
+      {
+      "id": "TEST-H001",
+      "title": "Halloween",
+      "gameYear": 1978,
+      "gameDate": "October 27, 1978",
+      "releaseHistory": [
+        {
+          "date": "October 25, 1978",
+          "type": "Canada theatrical release"
+        },
+        {
+          "date": "October 25, 1978",
+          "type": "United States limited theatrical release"
+        },
+        {
+          "date": "October 27, 1978",
+          "type": "United States theatrical release"
+        },
+        {
+          "date": "October 31, 1978",
+          "type": "San Diego Film Festival"
+        },
+        {
+          "date": "November 5, 1978",
+          "type": "Chicago International Film Festival"
+        }
+      ],
+      "director": "John Carpenter",
+      "actors": [
+        "Donald Pleasence",
+        "Jamie Lee Curtis",
+        "Nancy Kyes",
+        "P.J. Soles",
+        "Charles Cyphers",
+        "Kyle Richards"
+      ],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
+      "runtime": "91 minutes",
+      "boosts": []
+    },
+    {
+      "id": "TEST-H002",
+      "title": "Halloween",
+      "gameYear": 2007,
+      "gameDate": "August 31, 2007",
+      "releaseHistory": [
+        {
+          "date": "August 31, 2007",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Rob Zombie",
+      "actors": [
+        "Scout Taylor-Compton",
+        "Malcolm McDowell",
+        "Tyler Mane",
+        "Sheri Moon Zombie",
+        "Danny Trejo",
+        "Danielle Harris"
+      ],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
+      "runtime": "109 minutes",
+      "boosts": []
+    },
+    {
+      "id": "TEST-H003",
+      "title": "Halloween",
+      "gameYear": 2018,
+      "gameDate": "October 19, 2018",
+      "releaseHistory": [
+        {
+          "date": "October 19, 2018",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "David Gordon Green",
+      "actors": [
+        "Jamie Lee Curtis",
+        "Judy Greer",
+        "Andi Matichak",
+        "James Jude Courtney",
+        "Nick Castle",
+        "Haluk Bilginer"
+      ],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
+      "runtime": "106 minutes",
+      "boosts": []
+    }
     }
   ]
 }

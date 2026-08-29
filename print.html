@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Roll Credits - Print Cards</title>
 
   <style>
@@ -14,34 +15,44 @@
     body {
       margin: 0;
       padding: 24px;
+      background: #eeeeee;
+      color: #111111;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f2f2f2;
-      color: #111;
     }
 
     .controls {
       max-width: 900px;
-      margin: 0 auto 24px;
-      padding: 20px;
+      margin: 0 auto 25px;
+      padding: 22px;
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
     .controls h1 {
-      margin: 0 0 8px;
+      margin: 0 0 10px;
+      font-size: 26px;
     }
 
     .controls p {
-      margin: 6px 0;
+      margin: 7px 0;
+      line-height: 1.4;
     }
 
-    button {
-      margin-top: 14px;
-      padding: 10px 18px;
+    .controls button {
+      margin-top: 15px;
+      padding: 11px 22px;
+      border: none;
+      border-radius: 7px;
+      background: #111111;
+      color: white;
       font-size: 16px;
       font-weight: bold;
       cursor: pointer;
+    }
+
+    .controls button:hover {
+      opacity: 0.85;
     }
 
     .page {
@@ -49,80 +60,124 @@
       height: 11in;
       margin: 0 auto 30px;
       padding: 0.35in;
+
       background: white;
+
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(5, 1fr);
-      gap: 0.08in 0.12in;
+
+      column-gap: 0.12in;
+      row-gap: 0.08in;
+
       page-break-after: always;
     }
 
     .card {
-      border: 1.5px solid #111;
       position: relative;
+
+      border: 1.5px solid #111111;
+      border-radius: 0.12in;
+
+      overflow: hidden;
+
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
+
       text-align: center;
-      overflow: hidden;
+
+      background: white;
     }
 
     .card-label {
       position: absolute;
-      top: 0.18in;
+      top: 0.17in;
       left: 0;
       right: 0;
-      font-size: 10px;
+
+      font-size: 9px;
       font-weight: bold;
-      letter-spacing: 1.5px;
+      letter-spacing: 2px;
     }
 
-    .title {
-      padding: 0 0.18in;
+    .front .title {
+      padding: 0.2in;
+
       font-size: 19px;
       font-weight: bold;
       line-height: 1.15;
     }
 
+    .back {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
     .back .title {
       position: absolute;
-      top: 0.48in;
+
+      top: 0.43in;
+      left: 0.15in;
+      right: 0.15in;
+
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 1.15;
+    }
+
+    .qr-wrapper {
+      position: absolute;
+
+      top: 0.82in;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      width: 1.18in;
+      height: 1.18in;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qr-wrapper img {
+      width: 1.18in;
+      height: 1.18in;
+      display: block;
+    }
+
+    .scan-text {
+      position: absolute;
+
+      bottom: 0.72in;
       left: 0;
       right: 0;
-      font-size: 15px;
+
+      font-size: 7px;
+      letter-spacing: 0.7px;
+      color: #555555;
     }
 
     .year {
       position: absolute;
-      bottom: 0.28in;
+
+      bottom: 0.20in;
       left: 0;
       right: 0;
-      font-size: 24px;
+
+      font-size: 23px;
       font-weight: bold;
-    }
-
-    .qr {
-      width: 1.15in;
-      height: 1.15in;
-      margin-top: 0.25in;
-    }
-
-    .qr-note {
-      position: absolute;
-      bottom: 0.95in;
-      left: 0;
-      right: 0;
-      font-size: 8px;
-      color: #555;
     }
 
     .loading,
     .error {
       max-width: 900px;
-      margin: 30px auto;
+      margin: 25px auto;
+      padding: 22px;
       background: white;
-      padding: 25px;
       border-radius: 10px;
     }
 
@@ -131,6 +186,7 @@
     }
 
     @media print {
+
       body {
         margin: 0;
         padding: 0;
@@ -146,7 +202,6 @@
       .page {
         margin: 0;
         box-shadow: none;
-        page-break-after: always;
       }
 
       @page {
@@ -161,9 +216,22 @@
 
   <div class="controls">
     <h1>Roll Credits — Printable Cards</h1>
-    <p>This page generates the physical prototype cards directly from the movie database.</p>
-    <p><strong>Current test:</strong> first 10 movie titles.</p>
-    <p>Print double-sided. The backs are mirrored horizontally to compensate for the previous alignment issue.</p>
+
+    <p>
+      This page generates the physical prototype cards directly
+      from the Roll Credits movie database.
+    </p>
+
+    <p>
+      <strong>Current test:</strong>
+      10 cards for duplex-print alignment testing.
+    </p>
+
+    <p>
+      The backs are mirrored horizontally to compensate for the
+      reversed alignment encountered during the first physical test.
+    </p>
+
     <button onclick="window.print()">Print Cards</button>
   </div>
 
@@ -175,240 +243,517 @@
 
   <div id="printArea"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 
   <script>
-    const TEST_COUNT = 10;
+
+    /*
+      ==========================================
+      ROLL CREDITS PRINT TEST
+      ==========================================
+
+      For this physical test we deliberately use
+      these 10 titles rather than simply taking
+      the first 10 movies in movies.json.
+
+      This prevents titles such as "1917" from
+      confusing the physical test.
+    */
+
+    const TEST_TITLES = [
+      "Jaws",
+      "The Matrix",
+      "Mean Girls",
+      "Jurassic Park",
+      "The Dark Knight",
+      "Toy Story",
+      "Get Out",
+      "The Shining",
+      "Back to the Future",
+      "Forrest Gump"
+    ];
+
+
+    /*
+      Load movie database.
+    */
 
     async function loadMovies() {
+
       try {
+
         const response = await fetch("movies.json");
 
         if (!response.ok) {
-          throw new Error("Could not load movies.json. HTTP " + response.status);
+          throw new Error(
+            "movies.json returned HTTP " + response.status
+          );
         }
 
         const data = await response.json();
 
         if (!data.movies || !Array.isArray(data.movies)) {
-          throw new Error("movies.json does not contain a valid movies array.");
+          throw new Error(
+            "movies.json does not contain a valid movies array."
+          );
         }
 
         return data.movies;
+
       } catch (error) {
+
         showError(
           "Unable to load the movie database.<br><br>" +
           error.message +
-          "<br><br>Make sure this page and movies.json are both in the main folder of your GitHub repository."
+          "<br><br>" +
+          "Make sure print.html and movies.json are in the same GitHub folder."
         );
+
         throw error;
       }
     }
 
+
     /*
-      Multiple movies with the same title share ONE physical card.
+      Group movies by title.
 
-      Example:
-      Halloween 1978
-      Halloween 2007
-      Halloween 2018
+      This is important for movies such as Halloween.
 
-      becomes one physical Halloween card with:
+      Three database entries:
 
-      1978 / 2007 / 2018
+        Halloween — 1978
+        Halloween — 2007
+        Halloween — 2018
 
-      on the back.
+      become ONE physical card:
+
+        HALLOWEEN
+        1978 / 2007 / 2018
+
+      with one QR code leading to the shared
+      Halloween webpage.
     */
+
     function groupByTitle(movies) {
+
       const groups = {};
 
       movies.forEach(movie => {
-        const key = movie.title.trim().toLowerCase();
+
+        const key = movie.title
+          .trim()
+          .toLowerCase();
 
         if (!groups[key]) {
+
           groups[key] = {
             title: movie.title,
             movies: []
           };
+
         }
 
         groups[key].movies.push(movie);
+
       });
 
       return Object.values(groups);
     }
 
-    function createPages(groups) {
-      const printArea = document.getElementById("printArea");
 
-      /*
-        For the first physical test we only use 10 unique titles.
-        Later TEST_COUNT can simply be removed so the entire deck prints.
-      */
-      const selected = groups.slice(0, TEST_COUNT);
+    /*
+      Find the 10 specific test titles.
+    */
 
-      const pagesNeeded = Math.ceil(selected.length / 10);
+    function selectTestMovies(groups) {
 
-      for (let pageNumber = 0; pageNumber < pagesNeeded; pageNumber++) {
+      const selected = [];
 
-        const pageGroups = selected.slice(
-          pageNumber * 10,
-          pageNumber * 10 + 10
+      TEST_TITLES.forEach(testTitle => {
+
+        const match = groups.find(group =>
+          group.title.toLowerCase() === testTitle.toLowerCase()
         );
 
-        createFrontPage(pageGroups, printArea, pageNumber);
-        createBackPage(pageGroups, printArea, pageNumber);
-      }
+        if (match) {
+          selected.push(match);
+        }
 
-      document.getElementById("loading").style.display = "none";
-    }
-
-    function createFrontPage(groups, container, pageNumber) {
-      const page = document.createElement("div");
-      page.className = "page";
-
-      groups.forEach(group => {
-        const card = document.createElement("div");
-        card.className = "card";
-
-        card.innerHTML = `
-          <div class="card-label">ROLL CREDITS</div>
-          <div class="title">${escapeHtml(group.title)}</div>
-        `;
-
-        page.appendChild(card);
       });
 
+      return selected;
+    }
+
+
+    /*
+      Create all printable pages.
+    */
+
+    function createPages(groups) {
+
+      const printArea =
+        document.getElementById("printArea");
+
+      const selected =
+        selectTestMovies(groups);
+
+
+      if (selected.length === 0) {
+
+        showError(
+          "None of the test movies could be found in movies.json."
+        );
+
+        return;
+      }
+
+
       /*
-        Fill unused spaces so the grid maintains its structure.
+        One sheet holds 10 cards.
       */
+
+      createFrontPage(
+        selected,
+        printArea
+      );
+
+
+      createBackPage(
+        selected,
+        printArea
+      );
+
+
+      document.getElementById(
+        "loading"
+      ).style.display = "none";
+    }
+
+
+    /*
+      FRONT PAGE
+    */
+
+    function createFrontPage(groups, container) {
+
+      const page =
+        document.createElement("div");
+
+      page.className = "page";
+
+
+      groups.forEach(group => {
+
+        const card =
+          document.createElement("div");
+
+        card.className =
+          "card front";
+
+
+        card.innerHTML = `
+          <div class="card-label">
+            ROLL CREDITS
+          </div>
+
+          <div class="title">
+            ${escapeHtml(group.title)}
+          </div>
+        `;
+
+
+        page.appendChild(card);
+
+      });
+
+
+      /*
+        Keep the 2 x 5 grid intact.
+      */
+
       while (page.children.length < 10) {
-        const blank = document.createElement("div");
+
+        const blank =
+          document.createElement("div");
+
         blank.className = "card";
-        blank.style.visibility = "hidden";
+
+        blank.style.visibility =
+          "hidden";
+
         page.appendChild(blank);
       }
+
 
       container.appendChild(page);
     }
 
-    function createBackPage(groups, container, pageNumber) {
-      const page = document.createElement("div");
+
+    /*
+      BACK PAGE
+    */
+
+    function createBackPage(groups, container) {
+
+      const page =
+        document.createElement("div");
+
       page.className = "page";
 
+
       /*
-        MIRROR THE COLUMNS.
+        IMPORTANT:
 
-        Front:
-        1 2
-        3 4
-        5 6
+        The front is:
 
-        Back:
-        2 1
-        4 3
-        6 5
+        1  2
+        3  4
+        5  6
+        7  8
+        9  10
 
-        This is intended for duplex printing where the sheet is
-        flipped horizontally/along the long edge.
+
+        The back is deliberately mirrored:
+
+        2  1
+        4  3
+        6  5
+        8  7
+        10 9
+
+        This is the correction for the reversed
+        backside encountered during the previous
+        physical print.
       */
+
+
       const mirroredGroups = [];
 
+
       for (let row = 0; row < 5; row++) {
-        const rowGroups = groups.slice(row * 2, row * 2 + 2);
+
+        const rowGroups =
+          groups.slice(
+            row * 2,
+            row * 2 + 2
+          );
+
 
         if (rowGroups.length === 2) {
-          mirroredGroups.push(rowGroups[1]);
-          mirroredGroups.push(rowGroups[0]);
+
+          mirroredGroups.push(
+            rowGroups[1]
+          );
+
+          mirroredGroups.push(
+            rowGroups[0]
+          );
+
         } else if (rowGroups.length === 1) {
+
           mirroredGroups.push(null);
-          mirroredGroups.push(rowGroups[0]);
+
+          mirroredGroups.push(
+            rowGroups[0]
+          );
         }
       }
 
-      mirroredGroups.forEach((group, index) => {
 
-        const card = document.createElement("div");
-        card.className = "card back";
+      mirroredGroups.forEach(group => {
+
+        const card =
+          document.createElement("div");
+
+        card.className =
+          "card back";
+
+
+        /*
+          Blank position.
+        */
 
         if (!group) {
-          card.style.visibility = "hidden";
+
+          card.style.visibility =
+            "hidden";
+
           page.appendChild(card);
+
           return;
         }
 
-        const years = group.movies
-          .map(movie => movie.gameYear)
-          .sort((a, b) => a - b);
 
-        const yearText = years.join(" / ");
+        /*
+          Get every game year associated
+          with this title.
 
-        const qrContainer = document.createElement("div");
-        qrContainer.className = "qr";
+          Halloween therefore becomes:
 
-        const encodedTitle = encodeURIComponent(group.title);
+          1978 / 2007 / 2018
+        */
+
+        const years =
+          group.movies
+            .map(movie => movie.gameYear)
+            .sort((a, b) => a - b);
+
+
+        const yearText =
+          years.join(" / ");
+
+
+        /*
+          Shared title QR code.
+
+          The existing website uses:
+
+          ?movie=Halloween
+
+          so all Halloween versions
+          arrive at the shared page.
+        */
 
         const url =
           "https://codymacintyre.github.io/movie-timeline/?movie=" +
-          encodedTitle;
+          encodeURIComponent(group.title);
+
+
+        /*
+          Build QR code using an external
+          QR image service.
+
+          This keeps the printable page
+          simple and avoids requiring a
+          separate QR library.
+        */
+
+        const qrUrl =
+          "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" +
+          encodeURIComponent(url);
+
 
         card.innerHTML = `
-          <div class="card-label">ROLL CREDITS</div>
-          <div class="title">${escapeHtml(group.title)}</div>
-          <div class="qr-note">SCAN FOR MOVIE DETAILS</div>
-          <div class="year">${yearText}</div>
+
+          <div class="card-label">
+            ROLL CREDITS
+          </div>
+
+          <div class="title">
+            ${escapeHtml(group.title)}
+          </div>
+
+          <div class="qr-wrapper">
+            <img
+              src="${qrUrl}"
+              alt="QR code for ${escapeHtml(group.title)}"
+            >
+          </div>
+
+          <div class="scan-text">
+            SCAN FOR MOVIE DETAILS
+          </div>
+
+          <div class="year">
+            ${escapeHtml(yearText)}
+          </div>
+
         `;
 
-        card.insertBefore(qrContainer, card.querySelector(".year"));
 
         page.appendChild(card);
 
-        new QRCode(qrContainer, {
-          text: url,
-          width: 110,
-          height: 110,
-          correctLevel: QRCode.CorrectLevel.M
-        });
       });
 
+
+      /*
+        Fill unused positions if necessary.
+      */
+
       while (page.children.length < 10) {
-        const blank = document.createElement("div");
-        blank.className = "card";
-        blank.style.visibility = "hidden";
+
+        const blank =
+          document.createElement("div");
+
+        blank.className =
+          "card";
+
+        blank.style.visibility =
+          "hidden";
+
         page.appendChild(blank);
       }
+
 
       container.appendChild(page);
     }
 
+
+    /*
+      Basic HTML escaping so movie titles
+      cannot break the page.
+    */
+
     function escapeHtml(text) {
+
       return String(text)
+
         .replace(/&/g, "&amp;")
+
         .replace(/</g, "&lt;")
+
         .replace(/>/g, "&gt;")
+
         .replace(/"/g, "&quot;")
+
         .replace(/'/g, "&#039;");
     }
 
-    function showError(message) {
-      document.getElementById("loading").style.display = "none";
 
-      const error = document.getElementById("error");
-      error.innerHTML = message;
-      error.style.display = "block";
+    function showError(message) {
+
+      document.getElementById(
+        "loading"
+      ).style.display = "none";
+
+
+      const error =
+        document.getElementById("error");
+
+
+      error.innerHTML =
+        message;
+
+
+      error.style.display =
+        "block";
     }
 
+
+    /*
+      Start.
+    */
+
     async function start() {
+
       try {
-        const movies = await loadMovies();
-        const groups = groupByTitle(movies);
+
+        const movies =
+          await loadMovies();
+
+        const groups =
+          groupByTitle(movies);
+
         createPages(groups);
+
       } catch (error) {
+
         console.error(error);
       }
     }
 
+
     start();
+
   </script>
 
 </body>

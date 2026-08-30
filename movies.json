@@ -1,55 +1,115 @@
 {
   "movies": [
     {
-      "id": "M001",
+      "id": "M114",
       "title": "A Quiet Place",
       "gameYear": 2018,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "April 6, 2018",
+      "releaseHistory": [
+        {
+          "date": "April 6, 2018",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "John Krasinski",
+      "actors": [
+        "Emily Blunt",
+        "John Krasinski",
+        "Millicent Simmonds",
+        "Noah Jupe",
+        "Cade Woodward"
+      ],
+      "genre": [
+        "Horror",
+        "Thriller",
+        "Science fiction"
+      ],
+      "runtime": 90,
       "boosts": []
     },
     {
-      "id": "M002",
+      "id": "M115",
       "title": "A Star Is Born",
       "gameYear": 1937,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "April 20, 1937",
+      "releaseHistory": [
+        {
+          "date": "April 20, 1937",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "William A. Wellman",
+      "actors": [
+        "Janet Gaynor",
+        "Fredric March",
+        "Adolphe Menjou",
+        "May Robson",
+        "Andy Devine"
+      ],
+      "genre": [
+        "Drama",
+        "Romance",
+        "Musical"
+      ],
+      "runtime": 111,
       "boosts": []
     },
     {
-      "id": "M003",
+      "id": "M116",
       "title": "A Star Is Born",
       "gameYear": 1954,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "September 29, 1954",
+      "releaseHistory": [
+        {
+          "date": "September 29, 1954",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "George Cukor",
+      "actors": [
+        "Judy Garland",
+        "James Mason",
+        "Jack Carson",
+        "Charles Bickford",
+        "Tommy Noonan"
+      ],
+      "genre": [
+        "Drama",
+        "Musical",
+        "Romance"
+      ],
+      "runtime": 154,
       "boosts": []
     },
     {
-      "id": "M004",
+      "id": "M117",
       "title": "A Star Is Born",
       "gameYear": 1976,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "December 17, 1976",
+      "releaseHistory": [
+        {
+          "date": "December 17, 1976",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Frank Pierson",
+      "actors": [
+        "Barbra Streisand",
+        "Kris Kristofferson",
+        "Gary Busey",
+        "Omar Sharif",
+        "Joan Lin"
+      ],
+      "genre": [
+        "Drama",
+        "Musical",
+        "Romance"
+      ],
+      "runtime": 139,
       "boosts": []
     },
     {
-      "id": "M005",
+      "id": "M078",
       "title": "A Star Is Born",
       "gameYear": 2018,
       "gameDate": "October 5, 2018",
@@ -76,31 +136,61 @@
       "boosts": []
     },
     {
-      "id": "M006",
+      "id": "M118",
       "title": "Aladdin",
       "gameYear": 1992,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "November 25, 1992",
+      "releaseHistory": [
+        {
+          "date": "November 25, 1992",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Ron Clements and John Musker",
+      "actors": [
+        "Scott Weinger",
+        "Robin Williams",
+        "Linda Larkin",
+        "Jonathan Freeman",
+        "Frank Welker"
+      ],
+      "genre": [
+        "Animation",
+        "Fantasy",
+        "Musical"
+      ],
+      "runtime": 90,
       "boosts": []
     },
     {
-      "id": "M007",
+      "id": "M119",
       "title": "Aladdin",
       "gameYear": 2019,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "May 24, 2019",
+      "releaseHistory": [
+        {
+          "date": "May 24, 2019",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Guy Ritchie",
+      "actors": [
+        "Will Smith",
+        "Mena Massoud",
+        "Naomi Scott",
+        "Marwan Kenzari",
+        "Navid Negahban"
+      ],
+      "genre": [
+        "Fantasy",
+        "Adventure",
+        "Musical"
+      ],
+      "runtime": 128,
       "boosts": []
     },
     {
-      "id": "M008",
+      "id": "M015",
       "title": "Alien",
       "gameYear": 1979,
       "gameDate": "May 25, 1979",
@@ -126,19 +216,33 @@
       "boosts": []
     },
     {
-      "id": "M009",
+      "id": "M120",
       "title": "American Pie",
       "gameYear": 1999,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "July 9, 1999",
+      "releaseHistory": [
+        {
+          "date": "July 9, 1999",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Paul Weitz and Chris Weitz",
+      "actors": [
+        "Jason Biggs",
+        "Thomas Ian Nicholas",
+        "Chris Klein",
+        "Alyson Hannigan",
+        "Seann William Scott"
+      ],
+      "genre": [
+        "Comedy",
+        "Teen"
+      ],
+      "runtime": 95,
       "boosts": []
     },
     {
-      "id": "M010",
+      "id": "M059",
       "title": "Avatar",
       "gameYear": 2009,
       "gameDate": "December 18, 2009",
@@ -164,7 +268,7 @@
       "boosts": []
     },
     {
-      "id": "M011",
+      "id": "M009",
       "title": "Back to the Future",
       "gameYear": 1985,
       "gameDate": "July 3, 1985",
@@ -191,7 +295,7 @@
       "boosts": []
     },
     {
-      "id": "M012",
+      "id": "M086",
       "title": "Barbie",
       "gameYear": 2023,
       "gameDate": "July 21, 2023",
@@ -217,7 +321,7 @@
       "boosts": []
     },
     {
-      "id": "M013",
+      "id": "M054",
       "title": "Batman Begins",
       "gameYear": 2005,
       "gameDate": "June 15, 2005",
@@ -244,7 +348,7 @@
       "boosts": []
     },
     {
-      "id": "M014",
+      "id": "M024",
       "title": "Beetlejuice",
       "gameYear": 1988,
       "gameDate": "March 30, 1988",
@@ -271,7 +375,7 @@
       "boosts": []
     },
     {
-      "id": "M015",
+      "id": "M063",
       "title": "Black Swan",
       "gameYear": 2010,
       "gameDate": "December 17, 2010",
@@ -297,31 +401,59 @@
       "boosts": []
     },
     {
-      "id": "M016",
+      "id": "M121",
       "title": "Borat",
       "gameYear": 2006,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "November 3, 2006",
+      "releaseHistory": [
+        {
+          "date": "November 3, 2006",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Larry Charles",
+      "actors": [
+        "Sacha Baron Cohen",
+        "Ken Davitian",
+        "Luenell",
+        "Pamela Anderson",
+        "Paul Gross"
+      ],
+      "genre": [
+        "Comedy",
+        "Mockumentary"
+      ],
+      "runtime": 84,
       "boosts": []
     },
     {
-      "id": "M017",
+      "id": "M122",
       "title": "Catch Me If You Can",
       "gameYear": 2002,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "December 25, 2002",
+      "releaseHistory": [
+        {
+          "date": "December 25, 2002",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Steven Spielberg",
+      "actors": [
+        "Leonardo DiCaprio",
+        "Tom Hanks",
+        "Christopher Walken",
+        "Martin Sheen",
+        "Amy Adams"
+      ],
+      "genre": [
+        "Crime",
+        "Comedy-drama"
+      ],
+      "runtime": 141,
       "boosts": []
     },
     {
-      "id": "M018",
+      "id": "M036",
       "title": "Clueless",
       "gameYear": 1995,
       "gameDate": "July 19, 1995",
@@ -347,7 +479,7 @@
       "boosts": []
     },
     {
-      "id": "M019",
+      "id": "M075",
       "title": "Deadpool",
       "gameYear": 2016,
       "gameDate": "February 12, 2016",
@@ -374,7 +506,7 @@
       "boosts": []
     },
     {
-      "id": "M020",
+      "id": "M023",
       "title": "Die Hard",
       "gameYear": 1988,
       "gameDate": "July 15, 1988",
@@ -400,19 +532,33 @@
       "boosts": []
     },
     {
-      "id": "M021",
+      "id": "M123",
       "title": "Dune",
       "gameYear": 1984,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "December 14, 1984",
+      "releaseHistory": [
+        {
+          "date": "December 14, 1984",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "David Lynch",
+      "actors": [
+        "Kyle MacLachlan",
+        "Francesca Annis",
+        "Patrick Stewart",
+        "Sting",
+        "José Ferrer"
+      ],
+      "genre": [
+        "Science fiction",
+        "Adventure"
+      ],
+      "runtime": 137,
       "boosts": []
     },
     {
-      "id": "M022",
+      "id": "M083",
       "title": "Dune",
       "gameYear": 2021,
       "gameDate": "October 22, 2021",
@@ -439,7 +585,7 @@
       "boosts": []
     },
     {
-      "id": "M023",
+      "id": "M017",
       "title": "E.T. the Extra-Terrestrial",
       "gameYear": 1982,
       "gameDate": "June 11, 1982",
@@ -465,19 +611,34 @@
       "boosts": []
     },
     {
-      "id": "M024",
+      "id": "M124",
       "title": "Edward Scissorhands",
       "gameYear": 1990,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "December 14, 1990",
+      "releaseHistory": [
+        {
+          "date": "December 14, 1990",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Tim Burton",
+      "actors": [
+        "Johnny Depp",
+        "Winona Ryder",
+        "Dianne Wiest",
+        "Anthony Michael Hall",
+        "Vincent Price"
+      ],
+      "genre": [
+        "Fantasy",
+        "Romance",
+        "Drama"
+      ],
+      "runtime": 105,
       "boosts": []
     },
     {
-      "id": "M025",
+      "id": "M088",
       "title": "Everything Everywhere All at Once",
       "gameYear": 2022,
       "gameDate": "March 25, 2022",
@@ -504,7 +665,7 @@
       "boosts": []
     },
     {
-      "id": "M026",
+      "id": "M020",
       "title": "Ferris Bueller's Day Off",
       "gameYear": 1986,
       "gameDate": "June 11, 1986",
@@ -530,7 +691,7 @@
       "boosts": []
     },
     {
-      "id": "M027",
+      "id": "M051",
       "title": "Finding Nemo",
       "gameYear": 2003,
       "gameDate": "May 30, 2003",
@@ -557,7 +718,7 @@
       "boosts": []
     },
     {
-      "id": "M028",
+      "id": "M007",
       "title": "Get Out",
       "gameYear": 2017,
       "gameDate": "February 24, 2017",
@@ -587,31 +748,61 @@
       "boosts": []
     },
     {
-      "id": "M029",
+      "id": "M125",
       "title": "Ghostbusters",
       "gameYear": 1984,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "June 8, 1984",
+      "releaseHistory": [
+        {
+          "date": "June 8, 1984",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Ivan Reitman",
+      "actors": [
+        "Bill Murray",
+        "Dan Aykroyd",
+        "Sigourney Weaver",
+        "Harold Ramis",
+        "Rick Moranis"
+      ],
+      "genre": [
+        "Comedy",
+        "Fantasy",
+        "Supernatural"
+      ],
+      "runtime": 105,
       "boosts": []
     },
     {
-      "id": "M030",
+      "id": "M126",
       "title": "Ghostbusters",
       "gameYear": 2016,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "July 15, 2016",
+      "releaseHistory": [
+        {
+          "date": "July 15, 2016",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Paul Feig",
+      "actors": [
+        "Kristen Wiig",
+        "Melissa McCarthy",
+        "Kate McKinnon",
+        "Leslie Jones",
+        "Chris Hemsworth"
+      ],
+      "genre": [
+        "Comedy",
+        "Fantasy",
+        "Supernatural"
+      ],
+      "runtime": 116,
       "boosts": []
     },
     {
-      "id": "M031",
+      "id": "M044",
       "title": "Gladiator",
       "gameYear": 2000,
       "gameDate": "May 5, 2000",
@@ -638,19 +829,34 @@
       "boosts": []
     },
     {
-      "id": "M032",
+      "id": "M127",
       "title": "Grease",
       "gameYear": 1978,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "June 16, 1978",
+      "releaseHistory": [
+        {
+          "date": "June 16, 1978",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Randal Kleiser",
+      "actors": [
+        "John Travolta",
+        "Olivia Newton-John",
+        "Stockard Channing",
+        "Jeff Conaway",
+        "Barry Pearl"
+      ],
+      "genre": [
+        "Musical",
+        "Romance",
+        "Comedy"
+      ],
+      "runtime": 110,
       "boosts": []
     },
     {
-      "id": "M033",
+      "id": "M028",
       "title": "Home Alone",
       "gameYear": 1990,
       "gameDate": "November 16, 1990",
@@ -676,7 +882,7 @@
       "boosts": []
     },
     {
-      "id": "M034",
+      "id": "M061",
       "title": "Inception",
       "gameYear": 2010,
       "gameDate": "July 16, 2010",
@@ -702,7 +908,7 @@
       "boosts": []
     },
     {
-      "id": "M035",
+      "id": "M073",
       "title": "Inside Out",
       "gameYear": 2015,
       "gameDate": "June 19, 2015",
@@ -729,7 +935,7 @@
       "boosts": []
     },
     {
-      "id": "M036",
+      "id": "M070",
       "title": "Interstellar",
       "gameYear": 2014,
       "gameDate": "November 7, 2014",
@@ -756,7 +962,7 @@
       "boosts": []
     },
     {
-      "id": "M037",
+      "id": "M057",
       "title": "Iron Man",
       "gameYear": 2008,
       "gameDate": "May 2, 2008",
@@ -782,7 +988,7 @@
       "boosts": []
     },
     {
-      "id": "M038",
+      "id": "M001",
       "title": "Jaws",
       "gameYear": 1975,
       "gameDate": "June 20, 1975",
@@ -808,7 +1014,7 @@
       "boosts": []
     },
     {
-      "id": "M039",
+      "id": "M079",
       "title": "Joker",
       "gameYear": 2019,
       "gameDate": "October 4, 2019",
@@ -835,7 +1041,7 @@
       "boosts": []
     },
     {
-      "id": "M040",
+      "id": "M031",
       "title": "Jurassic Park",
       "gameYear": 1993,
       "gameDate": "June 11, 1993",
@@ -861,7 +1067,7 @@
       "boosts": []
     },
     {
-      "id": "M041",
+      "id": "M081",
       "title": "Knives Out",
       "gameYear": 2019,
       "gameDate": "November 27, 2019",
@@ -888,7 +1094,7 @@
       "boosts": []
     },
     {
-      "id": "M042",
+      "id": "M074",
       "title": "La La Land",
       "gameYear": 2016,
       "gameDate": "December 9, 2016",
@@ -915,7 +1121,7 @@
       "boosts": []
     },
     {
-      "id": "M043",
+      "id": "M076",
       "title": "Lady Bird",
       "gameYear": 2017,
       "gameDate": "November 3, 2017",
@@ -941,7 +1147,7 @@
       "boosts": []
     },
     {
-      "id": "M044",
+      "id": "M003",
       "title": "Mean Girls",
       "gameYear": 2004,
       "gameDate": "April 30, 2004",
@@ -968,19 +1174,34 @@
       "boosts": []
     },
     {
-      "id": "M045",
+      "id": "M128",
       "title": "Men in Black",
       "gameYear": 1997,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "July 2, 1997",
+      "releaseHistory": [
+        {
+          "date": "July 2, 1997",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Barry Sonnenfeld",
+      "actors": [
+        "Tommy Lee Jones",
+        "Will Smith",
+        "Linda Fiorentino",
+        "Vincent D'Onofrio",
+        "Rip Torn"
+      ],
+      "genre": [
+        "Science fiction",
+        "Action",
+        "Comedy"
+      ],
+      "runtime": 98,
       "boosts": []
     },
     {
-      "id": "M046",
+      "id": "M087",
       "title": "Oppenheimer",
       "gameYear": 2023,
       "gameDate": "July 21, 2023",
@@ -1007,7 +1228,7 @@
       "boosts": []
     },
     {
-      "id": "M047",
+      "id": "M080",
       "title": "Parasite",
       "gameYear": 2019,
       "gameDate": "May 30, 2019",
@@ -1038,19 +1259,34 @@
       "boosts": []
     },
     {
-      "id": "M048",
+      "id": "M129",
       "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
       "gameYear": 2003,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "July 9, 2003",
+      "releaseHistory": [
+        {
+          "date": "July 9, 2003",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Gore Verbinski",
+      "actors": [
+        "Johnny Depp",
+        "Geoffrey Rush",
+        "Orlando Bloom",
+        "Keira Knightley",
+        "Jack Davenport"
+      ],
+      "genre": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
+      "runtime": 143,
       "boosts": []
     },
     {
-      "id": "M049",
+      "id": "M098",
       "title": "Psycho",
       "gameYear": 1960,
       "gameDate": "September 8, 1960",
@@ -1076,19 +1312,34 @@
       "boosts": []
     },
     {
-      "id": "M050",
+      "id": "M130",
       "title": "Psycho",
       "gameYear": 1998,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "December 4, 1998",
+      "releaseHistory": [
+        {
+          "date": "December 4, 1998",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Gus Van Sant",
+      "actors": [
+        "Vince Vaughn",
+        "Anne Heche",
+        "Julianne Moore",
+        "Viggo Mortensen",
+        "William H. Macy"
+      ],
+      "genre": [
+        "Horror",
+        "Thriller",
+        "Mystery"
+      ],
+      "runtime": 103,
       "boosts": []
     },
     {
-      "id": "M051",
+      "id": "M016",
       "title": "Raiders of the Lost Ark",
       "gameYear": 1981,
       "gameDate": "June 12, 1981",
@@ -1114,7 +1365,7 @@
       "boosts": []
     },
     {
-      "id": "M052",
+      "id": "M056",
       "title": "Ratatouille",
       "gameYear": 2007,
       "gameDate": "June 29, 2007",
@@ -1140,7 +1391,7 @@
       "boosts": []
     },
     {
-      "id": "M053",
+      "id": "M013",
       "title": "Rocky",
       "gameYear": 1976,
       "gameDate": "November 21, 1976",
@@ -1166,7 +1417,7 @@
       "boosts": []
     },
     {
-      "id": "M054",
+      "id": "M041",
       "title": "Saving Private Ryan",
       "gameYear": 1998,
       "gameDate": "July 24, 1998",
@@ -1192,7 +1443,7 @@
       "boosts": []
     },
     {
-      "id": "M055",
+      "id": "M038",
       "title": "Scream",
       "gameYear": 1996,
       "gameDate": "December 20, 1996",
@@ -1218,7 +1469,7 @@
       "boosts": []
     },
     {
-      "id": "M056",
+      "id": "M046",
       "title": "Shrek",
       "gameYear": 2001,
       "gameDate": "May 18, 2001",
@@ -1245,7 +1496,7 @@
       "boosts": []
     },
     {
-      "id": "M057",
+      "id": "M049",
       "title": "Spider-Man",
       "gameYear": 2002,
       "gameDate": "May 3, 2002",
@@ -1271,67 +1522,141 @@
       "boosts": []
     },
     {
-      "id": "M058",
+      "id": "M131",
       "title": "Stand by Me",
       "gameYear": 1986,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "August 22, 1986",
+      "releaseHistory": [
+        {
+          "date": "August 22, 1986",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Rob Reiner",
+      "actors": [
+        "Wil Wheaton",
+        "River Phoenix",
+        "Corey Feldman",
+        "Jerry O'Connell",
+        "Kiefer Sutherland"
+      ],
+      "genre": [
+        "Coming-of-age",
+        "Drama",
+        "Adventure"
+      ],
+      "runtime": 89,
       "boosts": []
     },
     {
-      "id": "M059",
+      "id": "M132",
       "title": "Superbad",
       "gameYear": 2007,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "August 17, 2007",
+      "releaseHistory": [
+        {
+          "date": "August 17, 2007",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Greg Mottola",
+      "actors": [
+        "Jonah Hill",
+        "Michael Cera",
+        "Christopher Mintz-Plasse",
+        "Emma Stone",
+        "Bill Hader"
+      ],
+      "genre": [
+        "Comedy",
+        "Teen"
+      ],
+      "runtime": 113,
       "boosts": []
     },
     {
-      "id": "M060",
+      "id": "M133",
       "title": "Tenet",
       "gameYear": 2020,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "September 3, 2020",
+      "releaseHistory": [
+        {
+          "date": "September 3, 2020",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Christopher Nolan",
+      "actors": [
+        "John David Washington",
+        "Robert Pattinson",
+        "Elizabeth Debicki",
+        "Dimple Kapadia",
+        "Kenneth Branagh"
+      ],
+      "genre": [
+        "Science fiction",
+        "Action",
+        "Thriller"
+      ],
+      "runtime": 150,
       "boosts": []
     },
     {
-      "id": "M061",
+      "id": "M134",
       "title": "The Addams Family",
       "gameYear": 1991,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "November 22, 1991",
+      "releaseHistory": [
+        {
+          "date": "November 22, 1991",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Barry Sonnenfeld",
+      "actors": [
+        "Anjelica Huston",
+        "Raul Julia",
+        "Christopher Lloyd",
+        "Christina Ricci",
+        "Jimmy Workman"
+      ],
+      "genre": [
+        "Comedy",
+        "Fantasy",
+        "Horror"
+      ],
+      "runtime": 99,
       "boosts": []
     },
     {
-      "id": "M062",
+      "id": "M135",
       "title": "The Addams Family",
       "gameYear": 2019,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "October 11, 2019",
+      "releaseHistory": [
+        {
+          "date": "October 11, 2019",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Conrad Vernon and Greg Tiernan",
+      "actors": [
+        "Oscar Isaac",
+        "Charlize Theron",
+        "Chloë Grace Moretz",
+        "Finn Wolfhard",
+        "Nick Kroll"
+      ],
+      "genre": [
+        "Animation",
+        "Comedy",
+        "Family"
+      ],
+      "runtime": 86,
       "boosts": []
     },
     {
-      "id": "M063",
+      "id": "M066",
       "title": "Marvel's The Avengers",
       "gameYear": 2012,
       "gameDate": "May 4, 2012",
@@ -1360,19 +1685,34 @@
       "boosts": []
     },
     {
-      "id": "M064",
+      "id": "M136",
       "title": "The Batman",
       "gameYear": 2022,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "March 4, 2022",
+      "releaseHistory": [
+        {
+          "date": "March 4, 2022",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Matt Reeves",
+      "actors": [
+        "Robert Pattinson",
+        "Zoë Kravitz",
+        "Paul Dano",
+        "Jeffrey Wright",
+        "Colin Farrell"
+      ],
+      "genre": [
+        "Superhero",
+        "Crime",
+        "Mystery"
+      ],
+      "runtime": 176,
       "boosts": []
     },
     {
-      "id": "M065",
+      "id": "M019",
       "title": "The Breakfast Club",
       "gameYear": 1985,
       "gameDate": "February 15, 1985",
@@ -1398,19 +1738,34 @@
       "boosts": []
     },
     {
-      "id": "M066",
+      "id": "M137",
       "title": "The Conjuring",
       "gameYear": 2013,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "July 19, 2013",
+      "releaseHistory": [
+        {
+          "date": "July 19, 2013",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "James Wan",
+      "actors": [
+        "Vera Farmiga",
+        "Patrick Wilson",
+        "Lili Taylor",
+        "Ron Livingston",
+        "Shanley Caswell"
+      ],
+      "genre": [
+        "Horror",
+        "Supernatural",
+        "Mystery"
+      ],
+      "runtime": 112,
       "boosts": []
     },
     {
-      "id": "M067",
+      "id": "M055",
       "title": "The Departed",
       "gameYear": 2006,
       "gameDate": "October 6, 2006",
@@ -1436,7 +1791,7 @@
       "boosts": []
     },
     {
-      "id": "M068",
+      "id": "M012",
       "title": "The Exorcist",
       "gameYear": 1973,
       "gameDate": "December 26, 1973",
@@ -1461,7 +1816,7 @@
       "boosts": []
     },
     {
-      "id": "M069",
+      "id": "M011",
       "title": "The Godfather",
       "gameYear": 1972,
       "gameDate": "March 24, 1972",
@@ -1487,19 +1842,34 @@
       "boosts": []
     },
     {
-      "id": "M070",
+      "id": "M138",
       "title": "The Green Mile",
       "gameYear": 1999,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "December 10, 1999",
+      "releaseHistory": [
+        {
+          "date": "December 10, 1999",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Frank Darabont",
+      "actors": [
+        "Tom Hanks",
+        "Michael Clarke Duncan",
+        "David Morse",
+        "Bonnie Hunt",
+        "James Cromwell"
+      ],
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "Crime"
+      ],
+      "runtime": 189,
       "boosts": []
     },
     {
-      "id": "M071",
+      "id": "M060",
       "title": "The Hangover",
       "gameYear": 2009,
       "gameDate": "June 5, 2009",
@@ -1524,7 +1894,7 @@
       "boosts": []
     },
     {
-      "id": "M072",
+      "id": "M067",
       "title": "The Hunger Games",
       "gameYear": 2012,
       "gameDate": "March 23, 2012",
@@ -1550,7 +1920,7 @@
       "boosts": []
     },
     {
-      "id": "M073",
+      "id": "M052",
       "title": "The Incredibles",
       "gameYear": 2004,
       "gameDate": "November 5, 2004",
@@ -1577,7 +1947,7 @@
       "boosts": []
     },
     {
-      "id": "M074",
+      "id": "M034",
       "title": "The Lion King",
       "gameYear": 1994,
       "gameDate": "June 24, 1994",
@@ -1604,19 +1974,34 @@
       "boosts": []
     },
     {
-      "id": "M075",
+      "id": "M139",
       "title": "The Lion King",
       "gameYear": 2019,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "July 19, 2019",
+      "releaseHistory": [
+        {
+          "date": "July 19, 2019",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Jon Favreau",
+      "actors": [
+        "Donald Glover",
+        "Beyoncé",
+        "Seth Rogen",
+        "Chiwetel Ejiofor",
+        "James Earl Jones"
+      ],
+      "genre": [
+        "Animation",
+        "Musical",
+        "Adventure"
+      ],
+      "runtime": 118,
       "boosts": []
     },
     {
-      "id": "M076",
+      "id": "M026",
       "title": "The Little Mermaid",
       "gameYear": 1989,
       "gameDate": "November 17, 1989",
@@ -1643,19 +2028,34 @@
       "boosts": []
     },
     {
-      "id": "M077",
+      "id": "M140",
       "title": "The Little Mermaid",
       "gameYear": 2023,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "May 26, 2023",
+      "releaseHistory": [
+        {
+          "date": "May 26, 2023",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Rob Marshall",
+      "actors": [
+        "Halle Bailey",
+        "Jonah Hauer-King",
+        "Melissa McCarthy",
+        "Javier Bardem",
+        "Daveed Diggs"
+      ],
+      "genre": [
+        "Musical",
+        "Fantasy",
+        "Romance"
+      ],
+      "runtime": 135,
       "boosts": []
     },
     {
-      "id": "M078",
+      "id": "M047",
       "title": "The Lord of the Rings: The Fellowship of the Ring",
       "gameYear": 2001,
       "gameDate": "December 19, 2001",
@@ -1681,19 +2081,34 @@
       "boosts": []
     },
     {
-      "id": "M079",
+      "id": "M141",
       "title": "The Martian",
       "gameYear": 2015,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "October 2, 2015",
+      "releaseHistory": [
+        {
+          "date": "October 2, 2015",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Ridley Scott",
+      "actors": [
+        "Matt Damon",
+        "Jessica Chastain",
+        "Kristen Wiig",
+        "Jeff Daniels",
+        "Michael Peña"
+      ],
+      "genre": [
+        "Science fiction",
+        "Adventure",
+        "Drama"
+      ],
+      "runtime": 144,
       "boosts": []
     },
     {
-      "id": "M080",
+      "id": "M002",
       "title": "The Matrix",
       "gameYear": 1999,
       "gameDate": "March 31, 1999",
@@ -1724,19 +2139,34 @@
       "boosts": []
     },
     {
-      "id": "M081",
+      "id": "M142",
       "title": "The Princess Bride",
       "gameYear": 1987,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "October 9, 1987",
+      "releaseHistory": [
+        {
+          "date": "October 9, 1987",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Rob Reiner",
+      "actors": [
+        "Cary Elwes",
+        "Robin Wright",
+        "Mandy Patinkin",
+        "Chris Sarandon",
+        "André the Giant"
+      ],
+      "genre": [
+        "Fantasy",
+        "Adventure",
+        "Romance"
+      ],
+      "runtime": 98,
       "boosts": []
     },
     {
-      "id": "M082",
+      "id": "M008",
       "title": "The Shining",
       "gameYear": 1980,
       "gameDate": "May 23, 1980",
@@ -1762,7 +2192,7 @@
       "boosts": []
     },
     {
-      "id": "M083",
+      "id": "M029",
       "title": "The Silence of the Lambs",
       "gameYear": 1991,
       "gameDate": "February 14, 1991",
@@ -1789,7 +2219,7 @@
       "boosts": []
     },
     {
-      "id": "M084",
+      "id": "M045",
       "title": "The Sixth Sense",
       "gameYear": 1999,
       "gameDate": "August 6, 1999",
@@ -1815,7 +2245,7 @@
       "boosts": []
     },
     {
-      "id": "M085",
+      "id": "M018",
       "title": "The Terminator",
       "gameYear": 1984,
       "gameDate": "October 26, 1984",
@@ -1841,7 +2271,7 @@
       "boosts": []
     },
     {
-      "id": "M086",
+      "id": "M040",
       "title": "The Truman Show",
       "gameYear": 1998,
       "gameDate": "June 5, 1998",
@@ -1868,7 +2298,7 @@
       "boosts": []
     },
     {
-      "id": "M087",
+      "id": "M097",
       "title": "The Wizard of Oz",
       "gameYear": 1939,
       "gameDate": "August 25, 1939",
@@ -1895,7 +2325,7 @@
       "boosts": []
     },
     {
-      "id": "M088",
+      "id": "M069",
       "title": "The Wolf of Wall Street",
       "gameYear": 2013,
       "gameDate": "December 25, 2013",
@@ -1922,7 +2352,7 @@
       "boosts": []
     },
     {
-      "id": "M089",
+      "id": "M039",
       "title": "Titanic",
       "gameYear": 1997,
       "gameDate": "December 19, 1997",
@@ -1948,7 +2378,7 @@
       "boosts": []
     },
     {
-      "id": "M090",
+      "id": "M006",
       "title": "Toy Story",
       "gameYear": 1995,
       "gameDate": "November 22, 1995",
@@ -1979,43 +2409,87 @@
       "boosts": []
     },
     {
-      "id": "M091",
+      "id": "M143",
       "title": "Twilight",
       "gameYear": 2008,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "November 21, 2008",
+      "releaseHistory": [
+        {
+          "date": "November 21, 2008",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Catherine Hardwicke",
+      "actors": [
+        "Kristen Stewart",
+        "Robert Pattinson",
+        "Taylor Lautner",
+        "Billy Burke",
+        "Peter Facinelli"
+      ],
+      "genre": [
+        "Romance",
+        "Fantasy",
+        "Drama"
+      ],
+      "runtime": 122,
       "boosts": []
     },
     {
-      "id": "M092",
+      "id": "M144",
       "title": "Whiplash",
       "gameYear": 2014,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "October 10, 2014",
+      "releaseHistory": [
+        {
+          "date": "October 10, 2014",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Damien Chazelle",
+      "actors": [
+        "Miles Teller",
+        "J.K. Simmons",
+        "Paul Reiser",
+        "Melissa Benoist",
+        "Austin Stowell"
+      ],
+      "genre": [
+        "Drama",
+        "Music"
+      ],
+      "runtime": 106,
       "boosts": []
     },
     {
-      "id": "M093",
+      "id": "M145",
       "title": "Who Framed Roger Rabbit",
       "gameYear": 1988,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "June 22, 1988",
+      "releaseHistory": [
+        {
+          "date": "June 22, 1988",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Robert Zemeckis",
+      "actors": [
+        "Bob Hoskins",
+        "Christopher Lloyd",
+        "Joanna Cassidy",
+        "Charles Fleischer",
+        "Kathleen Turner"
+      ],
+      "genre": [
+        "Animation",
+        "Mystery",
+        "Comedy"
+      ],
+      "runtime": 104,
       "boosts": []
     },
     {
-      "id": "M094",
+      "id": "M048",
       "title": "Harry Potter and the Philosopher's Stone",
       "gameYear": 2001,
       "gameDate": "November 16, 2001",
@@ -2041,19 +2515,33 @@
       "boosts": []
     },
     {
-      "id": "M095",
+      "id": "M146",
       "title": "Mad Max",
       "gameYear": 1979,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "April 12, 1979",
+      "releaseHistory": [
+        {
+          "date": "April 12, 1979",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "George Miller",
+      "actors": [
+        "Mel Gibson",
+        "Joanne Samuel",
+        "Hugh Keays-Byrne",
+        "Steve Bisley",
+        "Tim Burns"
+      ],
+      "genre": [
+        "Action",
+        "Science fiction"
+      ],
+      "runtime": 88,
       "boosts": []
     },
     {
-      "id": "M096",
+      "id": "M035",
       "title": "Pulp Fiction",
       "gameYear": 1994,
       "gameDate": "October 14, 1994",
@@ -2083,7 +2571,7 @@
       "boosts": []
     },
     {
-      "id": "M097",
+      "id": "M014",
       "title": "Star Wars",
       "gameYear": 1977,
       "gameDate": "May 25, 1977",
@@ -2109,7 +2597,7 @@
       "boosts": []
     },
     {
-      "id": "M098",
+      "id": "M021",
       "title": "Top Gun",
       "gameYear": 1986,
       "gameDate": "May 16, 1986",
@@ -2232,475 +2720,1037 @@
       "boosts": []
     },
     {
-      "id": "M102",
+      "id": "M147",
       "title": "Taxi Driver",
       "gameYear": 1976,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "February 8, 1976",
+      "releaseHistory": [
+        {
+          "date": "February 8, 1976",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Martin Scorsese",
+      "actors": [
+        "Robert De Niro",
+        "Jodie Foster",
+        "Cybill Shepherd",
+        "Harvey Keitel",
+        "Peter Boyle"
+      ],
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 114,
       "boosts": []
     },
     {
-      "id": "M103",
+      "id": "M148",
       "title": "Superman",
       "gameYear": 1978,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "December 15, 1978",
+      "releaseHistory": [
+        {
+          "date": "December 15, 1978",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Richard Donner",
+      "actors": [
+        "Christopher Reeve",
+        "Marlon Brando",
+        "Gene Hackman",
+        "Margot Kidder",
+        "Ned Beatty"
+      ],
+      "genre": [
+        "Superhero",
+        "Action",
+        "Science fiction"
+      ],
+      "runtime": 143,
       "boosts": []
     },
     {
-      "id": "M104",
+      "id": "M149",
       "title": "Superman",
       "gameYear": 2025,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "July 11, 2025",
+      "releaseHistory": [
+        {
+          "date": "July 11, 2025",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "James Gunn",
+      "actors": [
+        "David Corenswet",
+        "Rachel Brosnahan",
+        "Nicholas Hoult",
+        "Edi Gathegi",
+        "Nathan Fillion"
+      ],
+      "genre": [
+        "Superhero",
+        "Action",
+        "Science fiction"
+      ],
+      "runtime": 130,
       "boosts": []
     },
     {
-      "id": "M105",
+      "id": "M150",
       "title": "Apocalypse Now",
       "gameYear": 1979,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "August 15, 1979",
+      "releaseHistory": [
+        {
+          "date": "August 15, 1979",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Francis Ford Coppola",
+      "actors": [
+        "Martin Sheen",
+        "Marlon Brando",
+        "Robert Duvall",
+        "Frederic Forrest",
+        "Dennis Hopper"
+      ],
+      "genre": [
+        "War",
+        "Drama"
+      ],
+      "runtime": 147,
       "boosts": []
     },
     {
-      "id": "M106",
+      "id": "M151",
       "title": "The Goonies",
       "gameYear": 1985,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "June 7, 1985",
+      "releaseHistory": [
+        {
+          "date": "June 7, 1985",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Richard Donner",
+      "actors": [
+        "Sean Astin",
+        "Josh Brolin",
+        "Jeff Cohen",
+        "Corey Feldman",
+        "Kerri Green"
+      ],
+      "genre": [
+        "Adventure",
+        "Comedy",
+        "Family"
+      ],
+      "runtime": 114,
+      "boosts": []
+    },
+    {
+      "id": "M152",
+      "title": "The Lost Boys",
+      "gameYear": 1987,
+      "gameDate": "July 31, 1987",
+      "releaseHistory": [
+        {
+          "date": "July 31, 1987",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Joel Schumacher",
+      "actors": [
+        "Jason Patric",
+        "Corey Haim",
+        "Kiefer Sutherland",
+        "Corey Feldman",
+        "Jami Gertz"
+      ],
+      "genre": [
+        "Horror",
+        "Comedy",
+        "Teen"
+      ],
+      "runtime": 97,
+      "boosts": []
+    },
+    {
+      "id": "M153",
+      "title": "The Karate Kid",
+      "gameYear": 1984,
+      "gameDate": "June 22, 1984",
+      "releaseHistory": [
+        {
+          "date": "June 22, 1984",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "John G. Avildsen",
+      "actors": [
+        "Ralph Macchio",
+        "Pat Morita",
+        "Elisabeth Shue",
+        "William Zabka",
+        "Martin Kove"
+      ],
+      "genre": [
+        "Drama",
+        "Sports",
+        "Coming-of-age"
+      ],
+      "runtime": 126,
+      "boosts": []
+    },
+    {
+      "id": "M154",
+      "title": "The Karate Kid",
+      "gameYear": 2010,
+      "gameDate": "June 11, 2010",
+      "releaseHistory": [
+        {
+          "date": "June 11, 2010",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Harald Zwart",
+      "actors": [
+        "Jaden Smith",
+        "Jackie Chan",
+        "Taraji P. Henson",
+        "Wenwen Han",
+        "Wang Zhenwei"
+      ],
+      "genre": [
+        "Drama",
+        "Sports",
+        "Family"
+      ],
+      "runtime": 140,
+      "boosts": []
+    },
+    {
+      "id": "M155",
+      "title": "First Blood",
+      "gameYear": 1982,
+      "gameDate": "October 22, 1982",
+      "releaseHistory": [
+        {
+          "date": "October 22, 1982",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Ted Kotcheff",
+      "actors": [
+        "Sylvester Stallone",
+        "Richard Crenna",
+        "Brian Dennehy",
+        "Bill McKinney",
+        "Jack Starrett"
+      ],
+      "genre": [
+        "Action",
+        "Thriller"
+      ],
+      "runtime": 93,
+      "boosts": []
+    },
+    {
+      "id": "M156",
+      "title": "Fast Times at Ridgemont High",
+      "gameYear": 1982,
+      "gameDate": "August 13, 1982",
+      "releaseHistory": [
+        {
+          "date": "August 13, 1982",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Amy Heckerling",
+      "actors": [
+        "Sean Penn",
+        "Jennifer Jason Leigh",
+        "Judge Reinhold",
+        "Robert Romanus",
+        "Phoebe Cates"
+      ],
+      "genre": [
+        "Comedy",
+        "Teen"
+      ],
+      "runtime": 90,
+      "boosts": []
+    },
+    {
+      "id": "M157",
+      "title": "A Christmas Story",
+      "gameYear": 1983,
+      "gameDate": "November 18, 1983",
+      "releaseHistory": [
+        {
+          "date": "November 18, 1983",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Bob Clark",
+      "actors": [
+        "Peter Billingsley",
+        "Melinda Dillon",
+        "Darren McGavin",
+        "Scott Schwartz",
+        "Ian Petrella"
+      ],
+      "genre": [
+        "Comedy",
+        "Family"
+      ],
+      "runtime": 93,
+      "boosts": []
+    },
+    {
+      "id": "M158",
+      "title": "Labyrinth",
+      "gameYear": 1986,
+      "gameDate": "June 27, 1986",
+      "releaseHistory": [
+        {
+          "date": "June 27, 1986",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Jim Henson",
+      "actors": [
+        "Jennifer Connelly",
+        "David Bowie",
+        "Toby Froud",
+        "Shelley Thompson",
+        "Brian Henson"
+      ],
+      "genre": [
+        "Fantasy",
+        "Adventure",
+        "Musical"
+      ],
+      "runtime": 101,
+      "boosts": []
+    },
+    {
+      "id": "M159",
+      "title": "Dead Poets Society",
+      "gameYear": 1989,
+      "gameDate": "June 2, 1989",
+      "releaseHistory": [
+        {
+          "date": "June 2, 1989",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Peter Weir",
+      "actors": [
+        "Robin Williams",
+        "Robert Sean Leonard",
+        "Ethan Hawke",
+        "Josh Charles",
+        "Gale Hansen"
+      ],
+      "genre": [
+        "Drama",
+        "Coming-of-age"
+      ],
+      "runtime": 128,
+      "boosts": []
+    },
+    {
+      "id": "M160",
+      "title": "The Nightmare Before Christmas",
+      "gameYear": 1993,
+      "gameDate": "October 29, 1993",
+      "releaseHistory": [
+        {
+          "date": "October 29, 1993",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Henry Selick",
+      "actors": [
+        "Chris Sarandon",
+        "Catherine O'Hara",
+        "William Hickey",
+        "Glenn Shadix",
+        "Paul Reubens"
+      ],
+      "genre": [
+        "Animation",
+        "Fantasy",
+        "Musical"
+      ],
+      "runtime": 76,
+      "boosts": []
+    },
+    {
+      "id": "M161",
+      "title": "Teenage Mutant Ninja Turtles",
+      "gameYear": 1990,
+      "gameDate": "March 30, 1990",
+      "releaseHistory": [
+        {
+          "date": "March 30, 1990",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Steve Barron",
+      "actors": [
+        "Judith Hoag",
+        "Elias Koteas",
+        "Josh Pais",
+        "David Forman",
+        "Leif Tilden"
+      ],
+      "genre": [
+        "Superhero",
+        "Action",
+        "Comedy"
+      ],
+      "runtime": 93,
+      "boosts": []
+    },
+    {
+      "id": "M162",
+      "title": "Teenage Mutant Ninja Turtles",
+      "gameYear": 2014,
+      "gameDate": "August 8, 2014",
+      "releaseHistory": [
+        {
+          "date": "August 8, 2014",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Jonathan Liebesman",
+      "actors": [
+        "Megan Fox",
+        "Will Arnett",
+        "William Fichtner",
+        "Danny Woodburn",
+        "Noel Fisher"
+      ],
+      "genre": [
+        "Superhero",
+        "Action",
+        "Science fiction"
+      ],
+      "runtime": 101,
+      "boosts": []
+    },
+    {
+      "id": "M163",
+      "title": "The Sandlot",
+      "gameYear": 1993,
+      "gameDate": "April 7, 1993",
+      "releaseHistory": [
+        {
+          "date": "April 7, 1993",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "David Mickey Evans",
+      "actors": [
+        "Tom Guiry",
+        "Mike Vitar",
+        "Patrick Renna",
+        "Wendy Peffercorn",
+        "James Earl Jones"
+      ],
+      "genre": [
+        "Sports",
+        "Comedy",
+        "Family"
+      ],
+      "runtime": 101,
+      "boosts": []
+    },
+    {
+      "id": "M164",
+      "title": "Hocus Pocus",
+      "gameYear": 1993,
+      "gameDate": "July 16, 1993",
+      "releaseHistory": [
+        {
+          "date": "July 16, 1993",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Kenny Ortega",
+      "actors": [
+        "Bette Midler",
+        "Sarah Jessica Parker",
+        "Kathy Najimy",
+        "Omri Katz",
+        "Thora Birch"
+      ],
+      "genre": [
+        "Fantasy",
+        "Comedy",
+        "Family"
+      ],
+      "runtime": 96,
+      "boosts": []
+    },
+    {
+      "id": "M165",
+      "title": "Dumb and Dumber",
+      "gameYear": 1994,
+      "gameDate": "December 16, 1994",
+      "releaseHistory": [
+        {
+          "date": "December 16, 1994",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Peter Farrelly and Bobby Farrelly",
+      "actors": [
+        "Jim Carrey",
+        "Jeff Daniels",
+        "Lauren Holly",
+        "Teri Garr",
+        "Karen Duffy"
+      ],
+      "genre": [
+        "Comedy"
+      ],
+      "runtime": 107,
+      "boosts": []
+    },
+    {
+      "id": "M166",
+      "title": "The Mask",
+      "gameYear": 1994,
+      "gameDate": "July 29, 1994",
+      "releaseHistory": [
+        {
+          "date": "July 29, 1994",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Chuck Russell",
+      "actors": [
+        "Jim Carrey",
+        "Cameron Diaz",
+        "Peter Riegert",
+        "Peter Greene",
+        "Amy Yasbeck"
+      ],
+      "genre": [
+        "Comedy",
+        "Fantasy"
+      ],
+      "runtime": 101,
+      "boosts": []
+    },
+    {
+      "id": "M167",
+      "title": "Jumanji",
+      "gameYear": 1995,
+      "gameDate": "December 15, 1995",
+      "releaseHistory": [
+        {
+          "date": "December 15, 1995",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Joe Johnston",
+      "actors": [
+        "Robin Williams",
+        "Kirsten Dunst",
+        "David Alan Grier",
+        "Bonnie Hunt",
+        "Jonathan Hyde"
+      ],
+      "genre": [
+        "Fantasy",
+        "Adventure",
+        "Family"
+      ],
+      "runtime": 104,
+      "boosts": []
+    },
+    {
+      "id": "M168",
+      "title": "Space Jam",
+      "gameYear": 1996,
+      "gameDate": "November 15, 1996",
+      "releaseHistory": [
+        {
+          "date": "November 15, 1996",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Joe Pytka",
+      "actors": [
+        "Michael Jordan",
+        "Wayne Knight",
+        "Theresa Randle",
+        "Danny DeVito",
+        "Billy West"
+      ],
+      "genre": [
+        "Sports",
+        "Animation",
+        "Comedy"
+      ],
+      "runtime": 87,
+      "boosts": []
+    },
+    {
+      "id": "M169",
+      "title": "Clerks",
+      "gameYear": 1994,
+      "gameDate": "October 19, 1994",
+      "releaseHistory": [
+        {
+          "date": "October 19, 1994",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Kevin Smith",
+      "actors": [
+        "Brian O'Halloran",
+        "Jeff Anderson",
+        "Marilyn Ghigliotti",
+        "Lisa Spoonauer",
+        "Jason Mewes"
+      ],
+      "genre": [
+        "Comedy"
+      ],
+      "runtime": 92,
+      "boosts": []
+    },
+    {
+      "id": "M170",
+      "title": "Dazed and Confused",
+      "gameYear": 1993,
+      "gameDate": "September 24, 1993",
+      "releaseHistory": [
+        {
+          "date": "September 24, 1993",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Richard Linklater",
+      "actors": [
+        "Jason London",
+        "Joey Lauren Adams",
+        "Milla Jovovich",
+        "Rory Cochrane",
+        "Matthew McConaughey"
+      ],
+      "genre": [
+        "Comedy",
+        "Coming-of-age"
+      ],
+      "runtime": 103,
+      "boosts": []
+    },
+    {
+      "id": "M171",
+      "title": "The Big Lebowski",
+      "gameYear": 1998,
+      "gameDate": "March 6, 1998",
+      "releaseHistory": [
+        {
+          "date": "March 6, 1998",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Joel Coen and Ethan Coen",
+      "actors": [
+        "Jeff Bridges",
+        "John Goodman",
+        "Julianne Moore",
+        "Steve Buscemi",
+        "David Huddleston"
+      ],
+      "genre": [
+        "Comedy",
+        "Crime"
+      ],
+      "runtime": 117,
+      "boosts": []
+    },
+    {
+      "id": "M172",
+      "title": "Good Will Hunting",
+      "gameYear": 1997,
+      "gameDate": "December 5, 1997",
+      "releaseHistory": [
+        {
+          "date": "December 5, 1997",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Gus Van Sant",
+      "actors": [
+        "Matt Damon",
+        "Robin Williams",
+        "Ben Affleck",
+        "Minnie Driver",
+        "Stellan Skarsgård"
+      ],
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "runtime": 126,
+      "boosts": []
+    },
+    {
+      "id": "M173",
+      "title": "Office Space",
+      "gameYear": 1999,
+      "gameDate": "February 19, 1999",
+      "releaseHistory": [
+        {
+          "date": "February 19, 1999",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Mike Judge",
+      "actors": [
+        "Ron Livingston",
+        "Jennifer Aniston",
+        "David Herman",
+        "Ajay Naidu",
+        "Gary Cole"
+      ],
+      "genre": [
+        "Comedy"
+      ],
+      "runtime": 89,
+      "boosts": []
+    },
+    {
+      "id": "M174",
+      "title": "The Iron Giant",
+      "gameYear": 1999,
+      "gameDate": "August 6, 1999",
+      "releaseHistory": [
+        {
+          "date": "August 6, 1999",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Brad Bird",
+      "actors": [
+        "Eli Marienthal",
+        "Harry Connick Jr.",
+        "Jennifer Aniston",
+        "Vin Diesel",
+        "James Gammon"
+      ],
+      "genre": [
+        "Animation",
+        "Science fiction",
+        "Family"
+      ],
+      "runtime": 86,
+      "boosts": []
+    },
+    {
+      "id": "M175",
+      "title": "Donnie Darko",
+      "gameYear": 2001,
+      "gameDate": "January 19, 2001",
+      "releaseHistory": [
+        {
+          "date": "January 19, 2001",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Richard Kelly",
+      "actors": [
+        "Jake Gyllenhaal",
+        "Jena Malone",
+        "Maggie Gyllenhaal",
+        "Drew Barrymore",
+        "Patrick Swayze"
+      ],
+      "genre": [
+        "Science fiction",
+        "Psychological thriller",
+        "Drama"
+      ],
+      "runtime": 113,
+      "boosts": []
+    },
+    {
+      "id": "M176",
+      "title": "Little Miss Sunshine",
+      "gameYear": 2006,
+      "gameDate": "July 26, 2006",
+      "releaseHistory": [
+        {
+          "date": "July 26, 2006",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Jonathan Dayton and Valerie Faris",
+      "actors": [
+        "Greg Kinnear",
+        "Toni Collette",
+        "Steve Carell",
+        "Abigail Breslin",
+        "Paul Dano"
+      ],
+      "genre": [
+        "Comedy-drama",
+        "Road film"
+      ],
+      "runtime": 101,
+      "boosts": []
+    },
+    {
+      "id": "M177",
+      "title": "The Fast and the Furious",
+      "gameYear": 2001,
+      "gameDate": "June 22, 2001",
+      "releaseHistory": [
+        {
+          "date": "June 22, 2001",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Rob Cohen",
+      "actors": [
+        "Paul Walker",
+        "Vin Diesel",
+        "Michelle Rodriguez",
+        "Jordana Brewster",
+        "Rick Yune"
+      ],
+      "genre": [
+        "Action",
+        "Crime"
+      ],
+      "runtime": 106,
+      "boosts": []
+    },
+    {
+      "id": "M178",
+      "title": "Elf",
+      "gameYear": 2003,
+      "gameDate": "November 7, 2003",
+      "releaseHistory": [
+        {
+          "date": "November 7, 2003",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Jon Favreau",
+      "actors": [
+        "Will Ferrell",
+        "James Caan",
+        "Zooey Deschanel",
+        "Mary Steenburgen",
+        "Daniel Tay"
+      ],
+      "genre": [
+        "Christmas",
+        "Comedy",
+        "Fantasy"
+      ],
+      "runtime": 97,
+      "boosts": []
+    },
+    {
+      "id": "M179",
+      "title": "Meet the Parents",
+      "gameYear": 2000,
+      "gameDate": "October 6, 2000",
+      "releaseHistory": [
+        {
+          "date": "October 6, 2000",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Jay Roach",
+      "actors": [
+        "Ben Stiller",
+        "Robert De Niro",
+        "Teri Polo",
+        "Blythe Danner",
+        "Owen Wilson"
+      ],
+      "genre": [
+        "Comedy"
+      ],
+      "runtime": 108,
+      "boosts": []
+    },
+    {
+      "id": "M180",
+      "title": "Napoleon Dynamite",
+      "gameYear": 2004,
+      "gameDate": "June 11, 2004",
+      "releaseHistory": [
+        {
+          "date": "June 11, 2004",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Jared Hess",
+      "actors": [
+        "Jon Heder",
+        "Efren Ramirez",
+        "Jon Gries",
+        "Tina Majorino",
+        "Haylie Duff"
+      ],
+      "genre": [
+        "Comedy",
+        "Teen"
+      ],
+      "runtime": 95,
+      "boosts": []
+    },
+    {
+      "id": "M181",
+      "title": "Jackass: The Movie",
+      "gameYear": 2002,
+      "gameDate": "October 25, 2002",
+      "releaseHistory": [
+        {
+          "date": "October 25, 2002",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Jeff Tremaine",
+      "actors": [
+        "Johnny Knoxville",
+        "Bam Margera",
+        "Steve-O",
+        "Chris Pontius",
+        "Ryan Dunn"
+      ],
+      "genre": [
+        "Comedy",
+        "Reality"
+      ],
+      "runtime": 87,
+      "boosts": []
+    },
+    {
+      "id": "M182",
+      "title": "Scooby-Doo",
+      "gameYear": 2002,
+      "gameDate": "June 14, 2002",
+      "releaseHistory": [
+        {
+          "date": "June 14, 2002",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Raja Gosnell",
+      "actors": [
+        "Freddie Prinze Jr.",
+        "Sarah Michelle Gellar",
+        "Matthew Lillard",
+        "Linda Cardellini",
+        "Rowan Atkinson"
+      ],
+      "genre": [
+        "Comedy",
+        "Mystery",
+        "Family"
+      ],
+      "runtime": 88,
+      "boosts": []
+    },
+    {
+      "id": "M183",
+      "title": "Coraline",
+      "gameYear": 2009,
+      "gameDate": "February 6, 2009",
+      "releaseHistory": [
+        {
+          "date": "February 6, 2009",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Henry Selick",
+      "actors": [
+        "Dakota Fanning",
+        "Teri Hatcher",
+        "Jennifer Saunders",
+        "Dawn French",
+        "Keith David"
+      ],
+      "genre": [
+        "Animation",
+        "Fantasy",
+        "Horror"
+      ],
+      "runtime": 100,
+      "boosts": []
+    },
+    {
+      "id": "M184",
+      "title": "Watchmen",
+      "gameYear": 2009,
+      "gameDate": "March 6, 2009",
+      "releaseHistory": [
+        {
+          "date": "March 6, 2009",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Zack Snyder",
+      "actors": [
+        "Malin Akerman",
+        "Billy Crudup",
+        "Matthew Goode",
+        "Carla Gugino",
+        "Jackie Earle Haley"
+      ],
+      "genre": [
+        "Superhero",
+        "Mystery",
+        "Drama"
+      ],
+      "runtime": 162,
+      "boosts": []
+    },
+    {
+      "id": "M185",
+      "title": "The Perks of Being a Wallflower",
+      "gameYear": 2012,
+      "gameDate": "September 21, 2012",
+      "releaseHistory": [
+        {
+          "date": "September 21, 2012",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Stephen Chbosky",
+      "actors": [
+        "Logan Lerman",
+        "Emma Watson",
+        "Ezra Miller",
+        "Paul Rudd",
+        "Mae Whitman"
+      ],
+      "genre": [
+        "Coming-of-age",
+        "Drama"
+      ],
+      "runtime": 103,
       "boosts": []
     },
     {
       "id": "M107",
-      "title": "The Lost Boys",
-      "gameYear": 1987,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M108",
-      "title": "The Karate Kid",
-      "gameYear": 1984,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M109",
-      "title": "The Karate Kid",
-      "gameYear": 2010,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M110",
-      "title": "First Blood",
-      "gameYear": 1982,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M111",
-      "title": "Fast Times at Ridgemont High",
-      "gameYear": 1982,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M112",
-      "title": "A Christmas Story",
-      "gameYear": 1983,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M113",
-      "title": "Labyrinth",
-      "gameYear": 1986,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M114",
-      "title": "Dead Poets Society",
-      "gameYear": 1989,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M115",
-      "title": "The Nightmare Before Christmas",
-      "gameYear": 1993,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M116",
-      "title": "Teenage Mutant Ninja Turtles",
-      "gameYear": 1990,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M117",
-      "title": "Teenage Mutant Ninja Turtles",
-      "gameYear": 2014,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M118",
-      "title": "The Sandlot",
-      "gameYear": 1993,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M119",
-      "title": "Hocus Pocus",
-      "gameYear": 1993,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M120",
-      "title": "Dumb and Dumber",
-      "gameYear": 1994,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M121",
-      "title": "The Mask",
-      "gameYear": 1994,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M122",
-      "title": "Jumanji",
-      "gameYear": 1995,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M123",
-      "title": "Space Jam",
-      "gameYear": 1996,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M124",
-      "title": "Clerks",
-      "gameYear": 1994,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M125",
-      "title": "Dazed and Confused",
-      "gameYear": 1993,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M126",
-      "title": "The Big Lebowski",
-      "gameYear": 1998,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M127",
-      "title": "Good Will Hunting",
-      "gameYear": 1997,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M128",
-      "title": "Office Space",
-      "gameYear": 1999,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M129",
-      "title": "The Iron Giant",
-      "gameYear": 1999,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M130",
-      "title": "Donnie Darko",
-      "gameYear": 2001,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M131",
-      "title": "Little Miss Sunshine",
-      "gameYear": 2006,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M132",
-      "title": "The Fast and the Furious",
-      "gameYear": 2001,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M133",
-      "title": "Elf",
-      "gameYear": 2003,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M134",
-      "title": "Meet the Parents",
-      "gameYear": 2000,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M135",
-      "title": "Napoleon Dynamite",
-      "gameYear": 2004,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M136",
-      "title": "Jackass: The Movie",
-      "gameYear": 2002,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M137",
-      "title": "Scooby-Doo",
-      "gameYear": 2002,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M138",
-      "title": "Coraline",
-      "gameYear": 2009,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M139",
-      "title": "Watchmen",
-      "gameYear": 2009,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M140",
-      "title": "The Perks of Being a Wallflower",
-      "gameYear": 2012,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
-      "boosts": []
-    },
-    {
-      "id": "M141",
       "title": "A Nightmare on Elm Street",
       "gameYear": 1984,
       "gameDate": "November 9, 1984",
@@ -2726,7 +3776,7 @@
       "boosts": []
     },
     {
-      "id": "M142",
+      "id": "M108",
       "title": "A Nightmare on Elm Street",
       "gameYear": 2010,
       "gameDate": "April 30, 2010",
@@ -2752,127 +3802,269 @@
       "boosts": []
     },
     {
-      "id": "M143",
+      "id": "M186",
       "title": "Friday the 13th",
       "gameYear": 1980,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "May 9, 1980",
+      "releaseHistory": [
+        {
+          "date": "May 9, 1980",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Sean S. Cunningham",
+      "actors": [
+        "Betsy Palmer",
+        "Adrienne King",
+        "Harry Crosby",
+        "Laurie Bartram",
+        "Kevin Bacon"
+      ],
+      "genre": [
+        "Horror",
+        "Slasher"
+      ],
+      "runtime": 95,
       "boosts": []
     },
     {
-      "id": "M144",
+      "id": "M187",
       "title": "Friday the 13th",
       "gameYear": 2009,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "February 13, 2009",
+      "releaseHistory": [
+        {
+          "date": "February 13, 2009",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Marcus Nispel",
+      "actors": [
+        "Jared Padalecki",
+        "Danielle Panabaker",
+        "Amanda Righetti",
+        "Travis Van Winkle",
+        "Derek Mears"
+      ],
+      "genre": [
+        "Horror",
+        "Slasher"
+      ],
+      "runtime": 97,
       "boosts": []
     },
     {
-      "id": "M145",
+      "id": "M188",
       "title": "The Strangers",
       "gameYear": 2008,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "May 30, 2008",
+      "releaseHistory": [
+        {
+          "date": "May 30, 2008",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Bryan Bertino",
+      "actors": [
+        "Liv Tyler",
+        "Scott Speedman",
+        "Gemma Ward",
+        "Kip Weeks",
+        "Glenn Howerton"
+      ],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
+      "runtime": 86,
       "boosts": []
     },
     {
-      "id": "M146",
+      "id": "M189",
       "title": "The Ring",
       "gameYear": 2002,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "October 18, 2002",
+      "releaseHistory": [
+        {
+          "date": "October 18, 2002",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Gore Verbinski",
+      "actors": [
+        "Naomi Watts",
+        "Martin Henderson",
+        "David Dorfman",
+        "Brian Cox",
+        "Daveigh Chase"
+      ],
+      "genre": [
+        "Horror",
+        "Mystery",
+        "Supernatural"
+      ],
+      "runtime": 115,
       "boosts": []
     },
     {
-      "id": "M147",
+      "id": "M190",
       "title": "Child's Play",
       "gameYear": 1988,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "November 9, 1988",
+      "releaseHistory": [
+        {
+          "date": "November 9, 1988",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Tom Holland",
+      "actors": [
+        "Catherine Hicks",
+        "Chris Sarandon",
+        "Alex Vincent",
+        "Brad Dourif",
+        "Dinah Manoff"
+      ],
+      "genre": [
+        "Horror",
+        "Slasher"
+      ],
+      "runtime": 87,
       "boosts": []
     },
     {
-      "id": "M148",
+      "id": "M191",
       "title": "Child's Play",
       "gameYear": 2019,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "June 21, 2019",
+      "releaseHistory": [
+        {
+          "date": "June 21, 2019",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Lars Klevberg",
+      "actors": [
+        "Aubrey Plaza",
+        "Gabriel Bateman",
+        "Brian Tyree Henry",
+        "Mark Hamill",
+        "Tim Matheson"
+      ],
+      "genre": [
+        "Horror",
+        "Science fiction"
+      ],
+      "runtime": 90,
       "boosts": []
     },
     {
-      "id": "M149",
+      "id": "M192",
       "title": "The Evil Dead",
       "gameYear": 1981,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "October 15, 1981",
+      "releaseHistory": [
+        {
+          "date": "October 15, 1981",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Sam Raimi",
+      "actors": [
+        "Bruce Campbell",
+        "Ellen Sandweiss",
+        "Richard DeManincor",
+        "Betsy Baker",
+        "Sarah York"
+      ],
+      "genre": [
+        "Horror"
+      ],
+      "runtime": 85,
       "boosts": []
     },
     {
-      "id": "M150",
+      "id": "M193",
       "title": "The Maze Runner",
       "gameYear": 2014,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "September 19, 2014",
+      "releaseHistory": [
+        {
+          "date": "September 19, 2014",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Wes Ball",
+      "actors": [
+        "Dylan O'Brien",
+        "Kaya Scodelario",
+        "Thomas Brodie-Sangster",
+        "Will Poulter",
+        "Patricia Clarkson"
+      ],
+      "genre": [
+        "Science fiction",
+        "Action",
+        "Thriller"
+      ],
+      "runtime": 113,
       "boosts": []
     },
     {
-      "id": "M151",
+      "id": "M194",
       "title": "The Notebook",
       "gameYear": 2004,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "June 25, 2004",
+      "releaseHistory": [
+        {
+          "date": "June 25, 2004",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Nick Cassavetes",
+      "actors": [
+        "Ryan Gosling",
+        "Rachel McAdams",
+        "James Garner",
+        "Gena Rowlands",
+        "James Marsden"
+      ],
+      "genre": [
+        "Romance",
+        "Drama"
+      ],
+      "runtime": 123,
       "boosts": []
     },
     {
-      "id": "M152",
+      "id": "M195",
       "title": "Dear John",
       "gameYear": 2010,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "February 5, 2010",
+      "releaseHistory": [
+        {
+          "date": "February 5, 2010",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Lasse Hallström",
+      "actors": [
+        "Channing Tatum",
+        "Amanda Seyfried",
+        "Henry Thomas",
+        "Richard Jenkins",
+        "Scott Porter"
+      ],
+      "genre": [
+        "Romance",
+        "Drama",
+        "War"
+      ],
+      "runtime": 108,
       "boosts": []
     },
     {
-      "id": "M153",
+      "id": "M101",
       "title": "Planet of the Apes",
       "gameYear": 1968,
       "gameDate": "April 3, 1968",
@@ -2898,7 +4090,7 @@
       "boosts": []
     },
     {
-      "id": "M154",
+      "id": "M102",
       "title": "Planet of the Apes",
       "gameYear": 2001,
       "gameDate": "July 27, 2001",
@@ -2924,19 +4116,33 @@
       "boosts": []
     },
     {
-      "id": "M155",
+      "id": "M196",
       "title": "Knocked Up",
       "gameYear": 2007,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "June 1, 2007",
+      "releaseHistory": [
+        {
+          "date": "June 1, 2007",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Judd Apatow",
+      "actors": [
+        "Seth Rogen",
+        "Katherine Heigl",
+        "Paul Rudd",
+        "Leslie Mann",
+        "Jonah Hill"
+      ],
+      "genre": [
+        "Comedy",
+        "Romance"
+      ],
+      "runtime": 129,
       "boosts": []
     },
     {
-      "id": "M156",
+      "id": "M100",
       "title": "Citizen Kane",
       "gameYear": 1941,
       "gameDate": "May 1, 1941",
@@ -2962,55 +4168,114 @@
       "boosts": []
     },
     {
-      "id": "M157",
+      "id": "M197",
       "title": "Casablanca",
       "gameYear": 1942,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "January 23, 1943",
+      "releaseHistory": [
+        {
+          "date": "January 23, 1943",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Michael Curtiz",
+      "actors": [
+        "Humphrey Bogart",
+        "Ingrid Bergman",
+        "Paul Henreid",
+        "Claude Rains",
+        "Conrad Veidt"
+      ],
+      "genre": [
+        "Romance",
+        "Drama",
+        "War"
+      ],
+      "runtime": 102,
       "boosts": []
     },
     {
-      "id": "M158",
+      "id": "M198",
       "title": "It's a Wonderful Life",
       "gameYear": 1946,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "December 20, 1946",
+      "releaseHistory": [
+        {
+          "date": "December 20, 1946",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Frank Capra",
+      "actors": [
+        "James Stewart",
+        "Donna Reed",
+        "Lionel Barrymore",
+        "Thomas Mitchell",
+        "Henry Travers"
+      ],
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "Christmas"
+      ],
+      "runtime": 130,
       "boosts": []
     },
     {
-      "id": "M159",
+      "id": "M199",
       "title": "Singin' in the Rain",
       "gameYear": 1952,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "April 11, 1952",
+      "releaseHistory": [
+        {
+          "date": "April 11, 1952",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Gene Kelly and Stanley Donen",
+      "actors": [
+        "Gene Kelly",
+        "Donald O'Connor",
+        "Debbie Reynolds",
+        "Jean Hagen",
+        "Millard Mitchell"
+      ],
+      "genre": [
+        "Musical",
+        "Romance",
+        "Comedy"
+      ],
+      "runtime": 103,
       "boosts": []
     },
     {
-      "id": "M160",
+      "id": "M200",
       "title": "12 Angry Men",
       "gameYear": 1957,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "April 10, 1957",
+      "releaseHistory": [
+        {
+          "date": "April 10, 1957",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Sidney Lumet",
+      "actors": [
+        "Henry Fonda",
+        "Lee J. Cobb",
+        "Martin Balsam",
+        "John Fiedler",
+        "E.G. Marshall"
+      ],
+      "genre": [
+        "Drama",
+        "Courtroom"
+      ],
+      "runtime": 96,
       "boosts": []
     },
     {
-      "id": "M161",
+      "id": "M099",
       "title": "Vertigo",
       "gameYear": 1958,
       "gameDate": "May 9, 1958",
@@ -3036,79 +4301,166 @@
       "boosts": []
     },
     {
-      "id": "M162",
+      "id": "M201",
       "title": "The Good, the Bad and the Ugly",
       "gameYear": 1966,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "December 23, 1966",
+      "releaseHistory": [
+        {
+          "date": "December 23, 1966",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Sergio Leone",
+      "actors": [
+        "Clint Eastwood",
+        "Eli Wallach",
+        "Lee Van Cleef",
+        "Aldo Giuffrè",
+        "Mario Brega"
+      ],
+      "genre": [
+        "Western",
+        "Epic"
+      ],
+      "runtime": 161,
       "boosts": []
     },
     {
-      "id": "M163",
+      "id": "M202",
       "title": "2001: A Space Odyssey",
       "gameYear": 1968,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "April 3, 1968",
+      "releaseHistory": [
+        {
+          "date": "April 3, 1968",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Stanley Kubrick",
+      "actors": [
+        "Keir Dullea",
+        "Gary Lockwood",
+        "William Sylvester",
+        "Daniel Richter",
+        "Douglas Rain"
+      ],
+      "genre": [
+        "Science fiction",
+        "Epic"
+      ],
+      "runtime": 149,
       "boosts": []
     },
     {
-      "id": "M164",
+      "id": "M203",
       "title": "The Graduate",
       "gameYear": 1967,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "December 22, 1967",
+      "releaseHistory": [
+        {
+          "date": "December 22, 1967",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Mike Nichols",
+      "actors": [
+        "Anne Bancroft",
+        "Dustin Hoffman",
+        "Katharine Ross",
+        "William Daniels",
+        "Murray Hamilton"
+      ],
+      "genre": [
+        "Comedy-drama",
+        "Romance"
+      ],
+      "runtime": 106,
       "boosts": []
     },
     {
-      "id": "M165",
+      "id": "M204",
       "title": "Dirty Harry",
       "gameYear": 1971,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "April 23, 1971",
+      "releaseHistory": [
+        {
+          "date": "April 23, 1971",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Don Siegel",
+      "actors": [
+        "Clint Eastwood",
+        "Harry Guardino",
+        "Reni Santoni",
+        "John Vernon",
+        "Andrew Robinson"
+      ],
+      "genre": [
+        "Crime",
+        "Action",
+        "Thriller"
+      ],
+      "runtime": 102,
       "boosts": []
     },
     {
-      "id": "M166",
+      "id": "M205",
       "title": "A Clockwork Orange",
       "gameYear": 1971,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "December 19, 1971",
+      "releaseHistory": [
+        {
+          "date": "December 19, 1971",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Stanley Kubrick",
+      "actors": [
+        "Malcolm McDowell",
+        "Patrick Magee",
+        "Michael Bates",
+        "Warren Clarke",
+        "John Clive"
+      ],
+      "genre": [
+        "Crime",
+        "Science fiction",
+        "Drama"
+      ],
+      "runtime": 136,
       "boosts": []
     },
     {
-      "id": "M167",
+      "id": "M206",
       "title": "Rocky Horror Picture Show",
       "gameYear": 1975,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "September 26, 1975",
+      "releaseHistory": [
+        {
+          "date": "September 26, 1975",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Jim Sharman",
+      "actors": [
+        "Tim Curry",
+        "Susan Sarandon",
+        "Barry Bostwick",
+        "Richard O'Brien",
+        "Patricia Quinn"
+      ],
+      "genre": [
+        "Musical",
+        "Horror",
+        "Comedy"
+      ],
+      "runtime": 100,
       "boosts": []
     },
     {
-      "id": "M168",
+      "id": "M033",
       "title": "Forrest Gump",
       "gameYear": 1994,
       "gameDate": "July 6, 1994",
@@ -3134,7 +4486,7 @@
       "boosts": []
     },
     {
-      "id": "M169",
+      "id": "M027",
       "title": "Goodfellas",
       "gameYear": 1990,
       "gameDate": "September 19, 1990",
@@ -3160,43 +4512,87 @@
       "boosts": []
     },
     {
-      "id": "M170",
+      "id": "M207",
       "title": "Prisoners",
       "gameYear": 2013,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "September 20, 2013",
+      "releaseHistory": [
+        {
+          "date": "September 20, 2013",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Denis Villeneuve",
+      "actors": [
+        "Hugh Jackman",
+        "Jake Gyllenhaal",
+        "Viola Davis",
+        "Maria Bello",
+        "Terrence Howard"
+      ],
+      "genre": [
+        "Crime",
+        "Thriller",
+        "Mystery"
+      ],
+      "runtime": 153,
       "boosts": []
     },
     {
-      "id": "M171",
+      "id": "M208",
       "title": "The Prestige",
       "gameYear": 2006,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "October 20, 2006",
+      "releaseHistory": [
+        {
+          "date": "October 20, 2006",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Christopher Nolan",
+      "actors": [
+        "Christian Bale",
+        "Hugh Jackman",
+        "Scarlett Johansson",
+        "Michael Caine",
+        "Piper Perabo"
+      ],
+      "genre": [
+        "Mystery",
+        "Drama",
+        "Thriller"
+      ],
+      "runtime": 130,
       "boosts": []
     },
     {
-      "id": "M172",
+      "id": "M209",
       "title": "The Social Network",
       "gameYear": 2010,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "October 1, 2010",
+      "releaseHistory": [
+        {
+          "date": "October 1, 2010",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "David Fincher",
+      "actors": [
+        "Jesse Eisenberg",
+        "Andrew Garfield",
+        "Justin Timberlake",
+        "Armie Hammer",
+        "Max Minghella"
+      ],
+      "genre": [
+        "Drama",
+        "Biography"
+      ],
+      "runtime": 120,
       "boosts": []
     },
     {
-      "id": "M173",
+      "id": "M064",
       "title": "Bridesmaids",
       "gameYear": 2011,
       "gameDate": "May 13, 2011",
@@ -3221,7 +4617,7 @@
       "boosts": []
     },
     {
-      "id": "M174",
+      "id": "M065",
       "title": "Drive",
       "gameYear": 2011,
       "gameDate": "September 16, 2011",
@@ -3248,19 +4644,34 @@
       "boosts": []
     },
     {
-      "id": "M175",
+      "id": "M210",
       "title": "The Revenant",
       "gameYear": 2015,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "December 25, 2015",
+      "releaseHistory": [
+        {
+          "date": "December 25, 2015",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Alejandro G. Iñárritu",
+      "actors": [
+        "Leonardo DiCaprio",
+        "Tom Hardy",
+        "Domhnall Gleeson",
+        "Will Poulter",
+        "Forrest Goodluck"
+      ],
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Western"
+      ],
+      "runtime": 156,
       "boosts": []
     },
     {
-      "id": "M176",
+      "id": "M094",
       "title": "The Substance",
       "gameYear": 2024,
       "gameDate": "September 20, 2024",
@@ -3286,147 +4697,322 @@
       "boosts": []
     },
     {
-      "id": "M177",
+      "id": "M211",
       "title": "Moonrise Kingdom",
       "gameYear": 2012,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "May 25, 2012",
+      "releaseHistory": [
+        {
+          "date": "May 25, 2012",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Wes Anderson",
+      "actors": [
+        "Jared Gilman",
+        "Kara Hayward",
+        "Bruce Willis",
+        "Edward Norton",
+        "Bill Murray"
+      ],
+      "genre": [
+        "Comedy-drama",
+        "Coming-of-age"
+      ],
+      "runtime": 94,
       "boosts": []
     },
     {
-      "id": "M178",
+      "id": "M212",
       "title": "Gone Girl",
       "gameYear": 2014,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "October 3, 2014",
+      "releaseHistory": [
+        {
+          "date": "October 3, 2014",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "David Fincher",
+      "actors": [
+        "Ben Affleck",
+        "Rosamund Pike",
+        "Neil Patrick Harris",
+        "Tyler Perry",
+        "Carrie Coon"
+      ],
+      "genre": [
+        "Psychological thriller",
+        "Mystery",
+        "Drama"
+      ],
+      "runtime": 149,
       "boosts": []
     },
     {
-      "id": "M179",
+      "id": "M213",
       "title": "What We Do in the Shadows",
       "gameYear": 2014,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "June 19, 2014",
+      "releaseHistory": [
+        {
+          "date": "June 19, 2014",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Jemaine Clement and Taika Waititi",
+      "actors": [
+        "Jemaine Clement",
+        "Taika Waititi",
+        "Cori Gonzalez-Macuer",
+        "Jonny Brugh",
+        "Rhys Darby"
+      ],
+      "genre": [
+        "Comedy",
+        "Horror",
+        "Mockumentary"
+      ],
+      "runtime": 86,
       "boosts": []
     },
     {
-      "id": "M180",
+      "id": "M214",
       "title": "Jojo Rabbit",
       "gameYear": 2019,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "October 18, 2019",
+      "releaseHistory": [
+        {
+          "date": "October 18, 2019",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Taika Waititi",
+      "actors": [
+        "Roman Griffin Davis",
+        "Thomasin McKenzie",
+        "Scarlett Johansson",
+        "Taika Waititi",
+        "Sam Rockwell"
+      ],
+      "genre": [
+        "Comedy-drama",
+        "War",
+        "Satire"
+      ],
+      "runtime": 108,
       "boosts": []
     },
     {
-      "id": "M181",
+      "id": "M215",
       "title": "Step Brothers",
       "gameYear": 2008,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "July 25, 2008",
+      "releaseHistory": [
+        {
+          "date": "July 25, 2008",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Adam McKay",
+      "actors": [
+        "Will Ferrell",
+        "John C. Reilly",
+        "Mary Steenburgen",
+        "Richard Jenkins",
+        "Adam Scott"
+      ],
+      "genre": [
+        "Comedy"
+      ],
+      "runtime": 98,
       "boosts": []
     },
     {
-      "id": "M182",
+      "id": "M216",
       "title": "Booksmart",
       "gameYear": 2019,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "May 24, 2019",
+      "releaseHistory": [
+        {
+          "date": "May 24, 2019",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Olivia Wilde",
+      "actors": [
+        "Kaitlyn Dever",
+        "Beanie Feldstein",
+        "Jessica Williams",
+        "Jason Sudeikis",
+        "Lisa Kudrow"
+      ],
+      "genre": [
+        "Comedy",
+        "Coming-of-age"
+      ],
+      "runtime": 102,
       "boosts": []
     },
     {
-      "id": "M183",
+      "id": "M217",
       "title": "The Aristocats",
       "gameYear": 1970,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "December 11, 1970",
+      "releaseHistory": [
+        {
+          "date": "December 11, 1970",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Wolfgang Reitherman",
+      "actors": [
+        "Eva Gabor",
+        "Phil Harris",
+        "Sterling Holloway",
+        "Scatman Crothers",
+        "Paul Winchell"
+      ],
+      "genre": [
+        "Animation",
+        "Musical",
+        "Comedy"
+      ],
+      "runtime": 78,
       "boosts": []
     },
     {
-      "id": "M184",
+      "id": "M218",
       "title": "Spirited Away",
       "gameYear": 2001,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "July 20, 2001",
+      "releaseHistory": [
+        {
+          "date": "July 20, 2001",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Hayao Miyazaki",
+      "actors": [
+        "Rumi Hiiragi",
+        "Miyu Irino",
+        "Mari Natsuki",
+        "Takashi Naitō",
+        "Yasuko Sawaguchi"
+      ],
+      "genre": [
+        "Animation",
+        "Fantasy",
+        "Coming-of-age"
+      ],
+      "runtime": 125,
       "boosts": []
     },
     {
-      "id": "M185",
+      "id": "M219",
       "title": "Howl's Moving Castle",
       "gameYear": 2004,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "November 20, 2004",
+      "releaseHistory": [
+        {
+          "date": "November 20, 2004",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Hayao Miyazaki",
+      "actors": [
+        "Chieko Baishō",
+        "Takuya Kimura",
+        "Tatsuya Gashūin",
+        "Akihiro Miwa",
+        "Haruko Katō"
+      ],
+      "genre": [
+        "Animation",
+        "Fantasy",
+        "Romance"
+      ],
+      "runtime": 119,
       "boosts": []
     },
     {
-      "id": "M186",
+      "id": "M220",
       "title": "Digimon: The Movie",
       "gameYear": 2000,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "October 6, 2000",
+      "releaseHistory": [
+        {
+          "date": "October 6, 2000",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Mamoru Hosoda and Hiroyuki Kakudō",
+      "actors": [
+        "Lara Jill Miller",
+        "Joshua Seth",
+        "Liam O'Brien",
+        "Colleen O'Shaughnessey",
+        "Philece Sampler"
+      ],
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Family"
+      ],
+      "runtime": 82,
       "boosts": []
     },
     {
-      "id": "M187",
+      "id": "M221",
       "title": "Blade Runner",
       "gameYear": 1982,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "June 25, 1982",
+      "releaseHistory": [
+        {
+          "date": "June 25, 1982",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Ridley Scott",
+      "actors": [
+        "Harrison Ford",
+        "Rutger Hauer",
+        "Sean Young",
+        "Edward James Olmos",
+        "M. Emmet Walsh"
+      ],
+      "genre": [
+        "Science fiction",
+        "Neo-noir",
+        "Thriller"
+      ],
+      "runtime": 117,
       "boosts": []
     },
     {
-      "id": "M188",
+      "id": "M222",
       "title": "The Shawshank Redemption",
       "gameYear": 1994,
-      "gameDate": "",
-      "releaseHistory": [],
-      "director": "Not yet added",
-      "actors": [],
-      "genre": [],
-      "runtime": "",
+      "gameDate": "September 23, 1994",
+      "releaseHistory": [
+        {
+          "date": "September 23, 1994",
+          "type": "United States theatrical release"
+        }
+      ],
+      "director": "Frank Darabont",
+      "actors": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton",
+        "William Sadler",
+        "Clancy Brown"
+      ],
+      "genre": [
+        "Drama",
+        "Prison"
+      ],
+      "runtime": 142,
       "boosts": []
     }
   ]

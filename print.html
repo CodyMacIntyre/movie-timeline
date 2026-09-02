@@ -1,6 +1,66 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Roll Credits — Printable Prototype Cards</title>
 <style>
-@page{size:Letter portrait;margin:0}*{box-sizing:border-box}html,body{margin:0;padding:0;background:#ddd;font-family:Arial,Helvetica,sans-serif}.controls{position:sticky;top:0;z-index:20;padding:12px 16px;background:#111827;color:#fff;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.controls button{border:0;border-radius:8px;padding:10px 14px;font-weight:800;cursor:pointer}.primary{background:#ff3eae;color:#fff}.secondary{background:#374151;color:#fff}.controls span{opacity:.82;font-size:13px}.sheet{width:8.5in;height:11in;padding:0;position:relative;page-break-after:always;break-after:page;background:#fff;overflow:hidden}.front-sheet .card:nth-child(1),.back-sheet .card:nth-child(1){left:.5in;top:.5in}.front-sheet .card:nth-child(2),.back-sheet .card:nth-child(2){left:4in;top:.5in}.front-sheet .card:nth-child(3),.back-sheet .card:nth-child(3){left:.5in;top:3in}.front-sheet .card:nth-child(4),.back-sheet .card:nth-child(4){left:4in;top:3in}.front-sheet .card:nth-child(5),.back-sheet .card:nth-child(5){left:.5in;top:5.5in}.front-sheet .card:nth-child(6),.back-sheet .card:nth-child(6){left:4in;top:5.5in}.front-sheet .card:nth-child(7),.back-sheet .card:nth-child(7){left:.5in;top:8in}.front-sheet .card:nth-child(8),.back-sheet .card:nth-child(8){left:4in;top:8in}..card{position:absolute;width:3.5in;height:2.5in;overflow:hidden;border-radius:.13in;color:#fff;background:radial-gradient(circle at 50% 35%,#10343a 0,#071b20 48%,#041116 100%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)}.inner-border{position:absolute;inset:.09in;border:.025in solid #4cf5f2;border-radius:.09in;box-shadow:0 0 7px rgba(76,245,242,.8),inset 0 0 8px rgba(76,245,242,.12);pointer-events:none;z-index:5}.pattern{position:absolute;inset:-.2in;color:rgba(76,245,242,.075);font-size:24px;line-height:38px;letter-spacing:7px;transform:rotate(-9deg) scale(1.15);white-space:normal;word-spacing:10px;z-index:0}.logo-svg{position:absolute;z-index:2;left:.77in;top:.06in;width:1.96in;height:.67in;filter:drop-shadow(0 0 3px rgba(255,62,174,.35))}.title-panel{position:absolute;z-index:3;left:.25in;right:.25in;top:1.00in;bottom:.20in;border:.025in solid #ff3eae;border-radius:.10in;box-shadow:0 0 7px rgba(255,62,174,.75),inset 0 0 8px rgba(76,245,242,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:.10in .18in;transform:rotate(-1deg)}.movie-title{font-weight:900;text-transform:uppercase;text-align:center;font-size:24px;line-height:.96;letter-spacing:1px;text-shadow:0 2px 0 #111,0 0 6px rgba(255,255,255,.25);max-width:100%;overflow-wrap:anywhere}.card-number{position:absolute;right:.14in;bottom:.09in;font-size:5.5px;letter-spacing:1px;color:rgba(255,255,255,.35);z-index:6}.back-card .logo-svg{left:1.02in;top:.055in;width:1.46in;height:.49in}.back-title{position:absolute;z-index:3;top:.57in;left:.28in;right:.28in;text-align:center;color:#f8ffff;font-weight:900;text-transform:uppercase;font-size:15px;line-height:.98;letter-spacing:.7px;text-shadow:0 2px 0 #111,0 0 6px rgba(255,255,255,.2);max-height:.32in;overflow:hidden;display:flex;align-items:center;justify-content:center}.release-label{position:absolute;z-index:3;top:.92in;left:.25in;right:.25in;text-align:center;color:#ff83c8;font-weight:900;font-size:10px;letter-spacing:2px}.release-label:before,.release-label:after{content:"";display:inline-block;width:.35in;height:2px;background:#ff3eae;vertical-align:middle;margin:0 .06in;box-shadow:0 0 5px #ff3eae}.release-year{position:absolute;z-index:3;top:1.07in;left:.12in;right:.12in;text-align:center;font-size:30px;line-height:1;font-weight:950;color:#f8ffff;text-shadow:0 0 8px rgba(76,245,242,.8);letter-spacing:.5px;white-space:nowrap}.scan-label{position:absolute;z-index:3;top:1.46in;left:.25in;right:.25in;text-align:center;color:#4cf5f2;font-weight:900;font-size:8px;letter-spacing:2px}.scan-label:before,.scan-label:after{content:"";display:inline-block;width:.30in;height:2px;background:#ff3eae;vertical-align:middle;margin:0 .05in;box-shadow:0 0 5px #ff3eae}.qr{position:absolute;z-index:4;width:.62in;height:.62in;left:1.44in;top:1.64in;background:#fff;padding:.035in;border-radius:.055in;box-shadow:0 0 8px rgba(255,62,174,.8);display:flex;align-items:center;justify-content:center}.qr canvas{display:block!important;width:100%!important;height:100%!important}.qr img{display:none!important}.scan-copy{position:absolute;z-index:3;left:.28in;right:.28in;bottom:.13in;text-align:center;font-size:7px;line-height:1.1;color:#f5f5f5}@media print{html,body{background:#fff}.controls{display:none}.sheet{box-shadow:none}}
+@page { size: Letter portrait; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #ddd; font-family: Arial, Helvetica, sans-serif; }
+.controls { position: sticky; top: 0; z-index: 20; padding: 12px 16px; background: #111827; color: #fff; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.controls button { border: 0; border-radius: 8px; padding: 10px 14px; font-weight: 800; cursor: pointer; }
+.primary { background: #ff3eae; color: #fff; }
+.secondary { background: #374151; color: #fff; }
+.controls span { opacity: .82; font-size: 13px; }
+
+/* Every sheet is a physical Letter page. Cards are absolutely positioned in inches. */
+.sheet {
+  width: 8.5in;
+  height: 11in;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  page-break-after: always;
+  break-after: page;
+  background: #fff;
+}
+.sheet:last-of-type { page-break-after: auto; break-after: auto; }
+
+/* Exact card positions: 0.5in margins, 0in gap horizontally, 0in gap vertically. */
+.sheet > .card:nth-child(1) { position: absolute; left: .5in; top: .5in; }
+.sheet > .card:nth-child(2) { position: absolute; left: 4in; top: .5in; }
+.sheet > .card:nth-child(3) { position: absolute; left: .5in; top: 3in; }
+.sheet > .card:nth-child(4) { position: absolute; left: 4in; top: 3in; }
+.sheet > .card:nth-child(5) { position: absolute; left: .5in; top: 5.5in; }
+.sheet > .card:nth-child(6) { position: absolute; left: 4in; top: 5.5in; }
+.sheet > .card:nth-child(7) { position: absolute; left: .5in; top: 8in; }
+.sheet > .card:nth-child(8) { position: absolute; left: 4in; top: 8in; }
+
+.card {
+  position: absolute;
+  width: 3.5in;
+  height: 2.5in;
+  overflow: hidden;
+  border-radius: .13in;
+  color: #fff;
+  background: radial-gradient(circle at 50% 35%, #10343a 0, #071b20 48%, #041116 100%);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+}
+.inner-border { position:absolute; inset:.09in; border:.025in solid #4cf5f2; border-radius:.09in; box-shadow:0 0 7px rgba(76,245,242,.8),inset 0 0 8px rgba(76,245,242,.12); pointer-events:none; z-index:5; }
+.pattern { position:absolute; inset:-.2in; color:rgba(76,245,242,.075); font-size:24px; line-height:38px; letter-spacing:7px; transform:rotate(-9deg) scale(1.15); white-space:normal; word-spacing:10px; z-index:0; }
+.logo-svg { position:absolute; z-index:2; left:.77in; top:.06in; width:1.96in; height:.67in; filter:drop-shadow(0 0 3px rgba(255,62,174,.35)); }
+.title-panel { position:absolute; z-index:3; left:.25in; right:.25in; top:1.00in; bottom:.20in; border:.025in solid #ff3eae; border-radius:.10in; box-shadow:0 0 7px rgba(255,62,174,.75),inset 0 0 8px rgba(76,245,242,.08); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:.10in .18in; transform:rotate(-1deg); }
+.movie-title { font-weight:900; text-transform:uppercase; text-align:center; font-size:24px; line-height:.96; letter-spacing:1px; text-shadow:0 2px 0 #111,0 0 6px rgba(255,255,255,.25); max-width:100%; overflow-wrap:anywhere; }
+.card-number { position:absolute; right:.14in; bottom:.09in; font-size:5.5px; letter-spacing:1px; color:rgba(255,255,255,.35); z-index:6; }
+.back-card .logo-svg { left:1.02in; top:.055in; width:1.46in; height:.49in; }
+.back-title { position:absolute; z-index:3; top:.57in; left:.28in; right:.28in; text-align:center; color:#f8ffff; font-weight:900; text-transform:uppercase; font-size:15px; line-height:.98; letter-spacing:.7px; text-shadow:0 2px 0 #111,0 0 6px rgba(255,255,255,.2); max-height:.32in; overflow:hidden; display:flex; align-items:center; justify-content:center; }
+.release-label { position:absolute; z-index:3; top:.92in; left:.25in; right:.25in; text-align:center; color:#ff83c8; font-weight:900; font-size:10px; letter-spacing:2px; }
+.release-label:before,.release-label:after { content:""; display:inline-block; width:.35in; height:2px; background:#ff3eae; vertical-align:middle; margin:0 .06in; box-shadow:0 0 5px #ff3eae; }
+.release-year { position:absolute; z-index:3; top:1.07in; left:.12in; right:.12in; text-align:center; font-size:30px; line-height:1; font-weight:950; color:#f8ffff; text-shadow:0 0 8px rgba(76,245,242,.8); letter-spacing:.5px; white-space:nowrap; }
+.scan-label { position:absolute; z-index:3; top:1.46in; left:.25in; right:.25in; text-align:center; color:#4cf5f2; font-weight:900; font-size:8px; letter-spacing:2px; }
+.scan-label:before,.scan-label:after { content:""; display:inline-block; width:.30in; height:2px; background:#ff3eae; vertical-align:middle; margin:0 .05in; box-shadow:0 0 5px #ff3eae; }
+.qr { position:absolute; z-index:4; width:.62in; height:.62in; left:1.44in; top:1.64in; background:#fff; padding:.035in; border-radius:.055in; box-shadow:0 0 8px rgba(255,62,174,.8); display:flex; align-items:center; justify-content:center; }
+.qr canvas { display:block!important; width:100%!important; height:100%!important; }
+.qr img { display:none!important; }
+.scan-copy { position:absolute; z-index:3; left:.28in; right:.28in; bottom:.13in; text-align:center; font-size:7px; line-height:1.1; color:#f5f5f5; }
+@media print { html,body { background:#fff; } .controls { display:none!important; } .sheet { box-shadow:none; } }
 </style></head><body>
 <div class="controls"><button class="primary" onclick="window.print()">🖨 Print Cards</button><button class="secondary" onclick="window.scrollTo({top:0,behavior:'smooth'})">↟ Top</button><span>169 physical cards • 188 film entries • each front sheet is immediately followed by its matching back sheet • long-edge duplex</span></div>
 <section class="sheet front-sheet"><div class="card front-card"><div class="inner-border"></div><div class="pattern">◀　▶　Ⅱ　◀　▶　Ⅱ　◀　▶</div><svg class="logo-svg" viewBox="0 0 320 105" aria-label="Roll Credits logo" role="img">

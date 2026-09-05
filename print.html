@@ -24,6 +24,7 @@ html, body { margin: 0; padding: 0; background: #ddd; font-family: Arial, Helvet
 .sheet:last-of-type { page-break-after: auto; break-after: auto; }
 
 /* Exact card positions: 0.75in left/right margins, 0in gap horizontally, 0in gap vertically. */
+/* Duplex correction v4: test showed backs still about 1/16in too far left, so shift all backs right an additional 1/16in. */
 .sheet > .card:nth-child(1) { position: absolute; left: .75in; top: .5in; }
 .sheet > .card:nth-child(2) { position: absolute; left: 4.25in; top: .5in; }
 .sheet > .card:nth-child(3) { position: absolute; left: .75in; top: 3in; }
@@ -32,6 +33,16 @@ html, body { margin: 0; padding: 0; background: #ddd; font-family: Arial, Helvet
 .sheet > .card:nth-child(6) { position: absolute; left: 4.25in; top: 5.5in; }
 .sheet > .card:nth-child(7) { position: absolute; left: .75in; top: 8in; }
 .sheet > .card:nth-child(8) { position: absolute; left: 4.25in; top: 8in; }
+
+/* Back-side horizontal correction: +3/64in */
+.back-sheet > .card:nth-child(1) { left: .75in; }
+.back-sheet > .card:nth-child(2) { left: 4.25in; }
+.back-sheet > .card:nth-child(3) { left: .75in; }
+.back-sheet > .card:nth-child(4) { left: 4.25in; }
+.back-sheet > .card:nth-child(5) { left: .75in; }
+.back-sheet > .card:nth-child(6) { left: 4.25in; }
+.back-sheet > .card:nth-child(7) { left: .75in; }
+.back-sheet > .card:nth-child(8) { left: 4.25in; }
 
 .card {
   position: absolute;
@@ -62,7 +73,7 @@ html, body { margin: 0; padding: 0; background: #ddd; font-family: Arial, Helvet
 .scan-copy { position:absolute; z-index:3; left:.28in; right:.28in; bottom:.13in; text-align:center; font-size:7px; line-height:1.1; color:#f5f5f5; }
 @media print { html,body { background:#fff; } .controls { display:none!important; } .sheet { box-shadow:none; } }
 </style></head><body>
-<div class="controls"><button class="primary" onclick="window.print()">🖨 Print Cards</button><button class="secondary" onclick="window.scrollTo({top:0,behavior:'smooth'})">↟ Top</button><span>169 physical cards • 188 film entries • MASTER GEOMETRY v5 • each front sheet is immediately followed by its matching back sheet • long-edge duplex</span></div>
+<div class="controls"><button class="primary" onclick="window.print()">🖨 Print Cards</button><button class="secondary" onclick="window.scrollTo({top:0,behavior:'smooth'})">↟ Top</button><span>169 physical cards • 188 film entries • each front sheet is immediately followed by its matching back sheet • long-edge duplex</span></div>
 <section class="sheet front-sheet"><div class="card front-card"><div class="inner-border"></div><div class="pattern">◀　▶　Ⅱ　◀　▶　Ⅱ　◀　▶</div><svg class="logo-svg" viewBox="0 0 320 105" aria-label="Roll Credits logo" role="img">
  <g transform="translate(105,0)">
   <g stroke="#080b0e" stroke-width="6" stroke-linejoin="round">
